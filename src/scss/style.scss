@@ -1,3 +1,20 @@
-body {
-    background-color: red;
-}
+@import 'utilities/variables';
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+@import 'vendors/normalize';
+
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+
+@import 'components/buttons';
+
+
+@import 'pages/homepage';

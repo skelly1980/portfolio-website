@@ -1,20 +1,15 @@
-@import 'utilities/variables';
-@import 'utilities/functions';
-@import 'utilities/mixins';
-
-@import 'vendors/normalize';
-
-
 @import 'base/reset';
 @import 'base/typography';
-
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/variables';
 
 @import 'components/buttons';
 
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
 
-@import 'pages/homepage';
+@import 'pages/header';
+@import 'pages/main';

@@ -1,0 +1,43 @@
+header {
+    .container {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        justify-content: space-between;
+        background-color: $header-background;
+        color: #fff;
+
+        .header-content {
+            margin-right: 4rem;
+
+            & p {
+                padding: 1rem 0;
+            }
+        }
+
+        .header-image {
+            padding: 0 2rem;
+        }
+
+        .header-image img {
+            border-radius: 200px;
+            border: 5px solid #e6b800;
+        }
+    }
+
+    .contact {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        @include grid(repeat(2, 1fr));
+        padding: 1rem;
+        background-color: #ff9933;
+
+        & ul li {
+            padding: 1rem 0;
+        }
+
+        & ul li a {
+            padding: 0 .5rem;
+        }
+
+    }
+
+
+}

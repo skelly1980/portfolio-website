@@ -1,23 +1,35 @@
-const tabItems = document.querySelectorAll('tab-items');
-const tabContentItems = document.querySelectorAll('tab-content-item'); 
+const tabItems = document.querySelectorAll('.tab-item');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
+const textColorChange = document.getElementById('tab-1');
 
-function selectItem (e){
-    removeBorder();
-    removeShow();
-
-    this.classList.add('tab-border');
-    const tabContentItem = document.querySelector(`#{this.id}-content`)
-
-    tabContentItem.classList.add('show');
+// Select tab content item
+function selectItem(e) {
+	// Remove all show and border classes
+	removeBackground();
+	removeShow();
+	// Add border to current tab item
+	this.classList.add('tab-background');
+	// Grab content item from DOM
+	const tabContentItem = document.querySelector(`#${this.id}-content`);
+	// Add show class
+	tabContentItem.classList.add('show');
 }
 
-function removeBorder(){
-    tabItems.forEach(item =>item.classList.remove('tab-border'));
+// Remove bottom borders from all tab items
+function removeBackground() {
+	tabItems.forEach(item => {
+		item.classList.remove('tab-background');
+	});
 }
 
-function removeShow(){
-    tabItems.forEach(item =>item.classList.remove('show'));
+// Remove show class from all content items
+function removeShow() {
+	tabContentItems.forEach(item => {
+		item.classList.remove('show');
+	});
 }
 
-tabItems.forEach(item=>item.addEventListener('click', selectItem));
-
+// Listen for tab item click
+tabItems.forEach(item => {
+	item.addEventListener('click', selectItem);
+});

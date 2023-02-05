@@ -23,7 +23,6 @@
 .tab-background {
     background-color: $tab-background;
     border-top-right-radius: 35px;
-    border-bottom-right-radius: -35px;
 }
 
 .tab-content-item {
@@ -41,8 +40,4 @@
 .show {
     display: block !important;
     opacity: 1 !important;
-}
-
-.black {
-    color: #000;
 }

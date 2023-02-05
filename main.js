@@ -36,4 +36,3 @@ tabItems.forEach(item => {
 	item.addEventListener('click', selectItem);
 });
 
-//tabHeader.addEventListener('click', removeColor);

@@ -22,8 +22,8 @@
     <header>
       <div class="container flex">
         <div class="header-content slide-top">
-          <h1>Shawn Kelly</h1>
-          <h2>Web Development Specialist</h2>
+          <h1 class="text-xl">Shawn Kelly</h1>
+          <h2 class="text-lg">Web Development Specialist</h2>
           <p>
             Seeking an internship in the UX/UI field. Currently an honors
             student at University at Albany majoring in Informatics with a
@@ -81,21 +81,21 @@
       <section class="tabs">
         <div class="container">
           <div id="tab-1" class="tab-item tab-background">
-            <h2 id="tab-color">Work Experience</h2>
+            <h2 id="tab-color" class="text-lg">Work Experience</h2>
           </div>
           <div id="tab-2" class="tab-item">
-            <h2 id="tab-header">Skills</h2>
+            <h2 id="tab-header" class="text-lg">Skills</h2>
           </div>
         </div>
       </section>
 
-      <section>
+      
         <div class="tab-content">
           <div class="container">
             <!-- Tab Content 1 -->
             <div id="tab-1-content" class="tab-content-item show">
               <div class="suny">
-                <h2 class="padding-block-2 text-white">SUNY Administration</h2>
+                <h2 class="padding-block-2 text-white text-lg">SUNY Administration</h2>
                 <h3 class="padding-block-2">
                   Web Developer Sep 2022 - Present
                   <span>Albany, New York, United States</span>
@@ -107,7 +107,7 @@
               </div>
 
               <div class="Lowes padding-block-4">
-                <h2 class="padding-block-2 text-white">Lowes</h2>
+                <h2 class="padding-block-2 text-white text-lg">Lowes</h2>
                 <h3 class="padding-block-2">
                   Cashier/Fulfillment Specailist Sep 2020 - Present
                   <span>Halfmoon, New York, United States</span>
@@ -122,7 +122,7 @@
                 </ul>
               </div>
               <div class="tightlines padding-block-4">
-                <h2 class="padding-block-2 text-white">
+                <h2 class="padding-block-2 text-white text-lg">
                   Tightlines Fly Fishing
                 </h2>
                 <h3 class="padding-block-2">
@@ -189,28 +189,31 @@
             <!-- Tab Content 2 -->
             <div id="tab-2-content" class="tab-content-item">
               <div class="languages text-center">
-                <h2 class="text-white">Languages</h2>
+                <h2 class="text-white padding-block-3">Programming Languages</h2>
                 <div class="programming-lang-container padding-block-4">
                   <div class="html-container">
-                    <h4 class="text-white text-center padding-block-4">
+                    <a href="#html">
+                    <h4 class="text-white text-center text-md padding-block-4">
                       html5
                     </h4>
                     <img
                       class="html-logo"
                       src="src/assets/html5-logo.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                   <div class="css-container">
-                    <h4 class="text-white text-center padding-block-4">CSS3</h4>
+                    <a href="#css">
+                    <h4 class="text-white text-center text-md padding-block-4">CSS3</h4>
                     <img
                       class="css-logo"
                       src="src/assets/css3-icon-logo.png"
                       alt=""
-                    />
+                    /></a>
                   </div>
                   <div class="javaScript-container">
-                    <h4 class="text-white text-center padding-block-4">
+                    <a href="#javascript">
+                    <h4 class="text-white text-center text-md padding-block-4">
                       JavaScript
                     </h4>
                     <img
@@ -218,10 +221,11 @@
                       src="/src/assets/javascript-logo-icon.png"
                       alt=""
                       srcset=""
-                    />
+                    /></a>
                   </div>
                   <div class="sass-container">
-                    <h4 class="text-white text-center padding-block-4">
+                    <a href="#sass">
+                    <h4 class="text-white text-center text-md padding-block-4">
                       Sass/Scss
                     </h4>
                     <img
@@ -229,19 +233,21 @@
                       src="/src/assets/sass-logo-icon.png"
                       alt=""
                       srcset=""
-                    />
+                    /></a>
                   </div>
                   <div class="php-container">
-                    <h4 class="text-white text-center padding-block-4">PHP</h4>
+                    <a href="#php">
+                    <h4 class="text-white text-center text-md padding-block-4">PHP</h4>
                     <img
                       class="php-logo"
                       src="/src/assets/PHP-Logo-PNG.png"
                       alt=""
                       srcset=""
-                    />
+                    /></a>
                   </div>
                   <div class="mysql-container">
-                    <h4 class="text-white text-center padding-block-4">
+                    <a href="#mysql">
+                    <h4 class="text-white text-center text-md padding-block-4">
                       MySQL
                     </h4>
                     <img
@@ -249,10 +255,14 @@
                       src="/src/assets/mysql-logo-icon.png"
                       alt=""
                       srcset=""
-                    />
+                    /></a>
                   </div>
                 </div>
-                <p>
+              </div>
+
+                <div class="content-container">
+                  <h2 id="html" class="text-white text-lg padding-4">HTML</h2>
+                <p class="padding-block-4">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Consequatur quasi architecto eaque rem inventore consectetur,
                   aliquid animi ullam quod excepturi, reprehenderit possimus
@@ -267,6 +277,87 @@
                   aut magnam vel repudiandae molestiae, et excepturi optio
                   officia. Vel beatae perspiciatis nostrum ex.
                 </p>
+                <h2 id="css" class="text-white text-lg padding-4">CSS</h2>
+                <p class="padding-block-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi architecto eaque rem inventore consectetur,
+                  aliquid animi ullam quod excepturi, reprehenderit possimus
+                  provident quibusdam odit nemo repellendus doloribus ut
+                  explicabo neque! Vero cupiditate inventore mollitia quis
+                  minima saepe minus impedit recusandae ea omnis alias magnam
+                  tempore animi dolores ipsam incidunt odio eos, ad ex numquam
+                  doloribus! Cum sint consequatur debitis ipsum vitae dolorem
+                  recusandae pariatur fugiat alias impedit aspernatur, corrupti,
+                  dicta assumenda perferendis quod. Perspiciatis, vitae ex
+                  obcaecati fuga non amet expedita vero, animi veritatis autem
+                  aut magnam vel repudiandae molestiae, et excepturi optio
+                  officia. Vel beatae perspiciatis nostrum ex.
+                </p>
+                <h2 id="javascript" class="text-white text-lg padding-4">JavaScript</h2>
+                <p class="padding-block-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi architecto eaque rem inventore consectetur,
+                  aliquid animi ullam quod excepturi, reprehenderit possimus
+                  provident quibusdam odit nemo repellendus doloribus ut
+                  explicabo neque! Vero cupiditate inventore mollitia quis
+                  minima saepe minus impedit recusandae ea omnis alias magnam
+                  tempore animi dolores ipsam incidunt odio eos, ad ex numquam
+                  doloribus! Cum sint consequatur debitis ipsum vitae dolorem
+                  recusandae pariatur fugiat alias impedit aspernatur, corrupti,
+                  dicta assumenda perferendis quod. Perspiciatis, vitae ex
+                  obcaecati fuga non amet expedita vero, animi veritatis autem
+                  aut magnam vel repudiandae molestiae, et excepturi optio
+                  officia. Vel beatae perspiciatis nostrum ex.
+                </p>
+                <h2 id="sass" class="text-white text-lg padding-4">Sass/Scss</h2>
+                <p class="padding-block-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi architecto eaque rem inventore consectetur,
+                  aliquid animi ullam quod excepturi, reprehenderit possimus
+                  provident quibusdam odit nemo repellendus doloribus ut
+                  explicabo neque! Vero cupiditate inventore mollitia quis
+                  minima saepe minus impedit recusandae ea omnis alias magnam
+                  tempore animi dolores ipsam incidunt odio eos, ad ex numquam
+                  doloribus! Cum sint consequatur debitis ipsum vitae dolorem
+                  recusandae pariatur fugiat alias impedit aspernatur, corrupti,
+                  dicta assumenda perferendis quod. Perspiciatis, vitae ex
+                  obcaecati fuga non amet expedita vero, animi veritatis autem
+                  aut magnam vel repudiandae molestiae, et excepturi optio
+                  officia. Vel beatae perspiciatis nostrum ex.
+                </p>
+                <h2 id="php" class="text-white text-lg padding-4">PHP</h2>
+                <p class="padding-block-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi architecto eaque rem inventore consectetur,
+                  aliquid animi ullam quod excepturi, reprehenderit possimus
+                  provident quibusdam odit nemo repellendus doloribus ut
+                  explicabo neque! Vero cupiditate inventore mollitia quis
+                  minima saepe minus impedit recusandae ea omnis alias magnam
+                  tempore animi dolores ipsam incidunt odio eos, ad ex numquam
+                  doloribus! Cum sint consequatur debitis ipsum vitae dolorem
+                  recusandae pariatur fugiat alias impedit aspernatur, corrupti,
+                  dicta assumenda perferendis quod. Perspiciatis, vitae ex
+                  obcaecati fuga non amet expedita vero, animi veritatis autem
+                  aut magnam vel repudiandae molestiae, et excepturi optio
+                  officia. Vel beatae perspiciatis nostrum ex.
+                </p>
+                <h2 id="mysql" class="text-white text-lg padding-4">MySQL</h2>
+                <p class="padding-block-4">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Consequatur quasi architecto eaque rem inventore consectetur,
+                  aliquid animi ullam quod excepturi, reprehenderit possimus
+                  provident quibusdam odit nemo repellendus doloribus ut
+                  explicabo neque! Vero cupiditate inventore mollitia quis
+                  minima saepe minus impedit recusandae ea omnis alias magnam
+                  tempore animi dolores ipsam incidunt odio eos, ad ex numquam
+                  doloribus! Cum sint consequatur debitis ipsum vitae dolorem
+                  recusandae pariatur fugiat alias impedit aspernatur, corrupti,
+                  dicta assumenda perferendis quod. Perspiciatis, vitae ex
+                  obcaecati fuga non amet expedita vero, animi veritatis autem
+                  aut magnam vel repudiandae molestiae, et excepturi optio
+                  officia. Vel beatae perspiciatis nostrum ex.
+                </p>
+              </div>
               </div>
             </div>
           </div>

@@ -7,18 +7,18 @@ $colors: (
     "red": $tab-background,
 );
 
-@each $key,
+@each $color,
 $val in $colors {
-    .bg-#{$key} {
+    .bg-#{$color} {
         background-color: $val
     }
 
     @for $i from 1 through 9 {
-        .bg-#{key}-light-#{$i} {
+        .bg-#{color}-light-#{$i} {
             background-color: mix(white, $val, $i * 10%)
         }
 
-        .bg-#{key}-dark-#{$i} {
+        .bg-#{color}-dark-#{$i} {
             background-color: mix(black, $val, $i * 10%)
         }
     }

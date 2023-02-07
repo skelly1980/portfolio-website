@@ -3,9 +3,9 @@ header {
         @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
         justify-content: space-between;
         color: #fff;
+        padding: 2rem;
 
         .header-content {
-            margin-right: 4rem;
 
             & p {
                 padding: 1rem 0;
@@ -17,8 +17,28 @@ header {
         }
 
         .header-image img {
-            border-radius: 200px;
+            border-radius: 50%;
             border: 5px solid #e6b800;
+        }
+    }
+
+    @include lg() {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            text-align: center;
+            order: 1;
+        }
+
+        .header-image {
+            order: 0;
+            width: 20%;
         }
     }
 
@@ -26,17 +46,14 @@ header {
         @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
         @include grid(repeat(2, 1fr));
         padding: 1rem;
-        background-color: #ff9933;
 
         & ul li {
+            text-align: center;
             padding: 1rem 0;
         }
 
         & ul li a {
             padding: 0 .5rem;
         }
-
     }
-
-
 }

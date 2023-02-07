@@ -1,10 +1,13 @@
 $header-background: #4d004d;
 $tab-background: hsl(0, 100%, 30%);
+$contact-background-color: #ff9933;
+
 
 
 $colors: (
     "purple": $header-background,
     "red": $tab-background,
+    "orange": $contact-background-color,
 );
 
 @each $color,

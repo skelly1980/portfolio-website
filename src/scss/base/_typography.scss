@@ -1,2 +1,19 @@
 $text-white: #ffffff;
 $text-black: #333;
+
+$base-font-size: 1em;
+
+$font-size: (
+    "sm": $base-font-size * 1,
+    "md": $base-font-size * 1.5,
+    "lg": $base-font-size * 2,
+    "xl": $base-font-size * 2.5,
+    "xxl": $base-font-size * 3,
+);
+
+@each $key,
+$val in $font-size {
+    .text-#{$key} {
+        font-size: $val
+    }
+}

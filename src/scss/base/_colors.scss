@@ -1,0 +1,25 @@
+$header-background: #4d004d;
+$tab-background: hsl(0, 100%, 30%);
+
+
+$colors: (
+    "purple": $header-background,
+    "red": $tab-background,
+);
+
+@each $key,
+$val in $colors {
+    .bg-#{$key} {
+        background-color: $val
+    }
+
+    @for $i from 1 through 9 {
+        .bg-#{key}-light-#{$i} {
+            background-color: mix(white, $val, $i * 10%)
+        }
+
+        .bg-#{key}-dark-#{$i} {
+            background-color: mix(black, $val, $i * 10%)
+        }
+    }
+}

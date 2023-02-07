@@ -2,7 +2,6 @@ header {
     .container {
         @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
         justify-content: space-between;
-        background-color: $header-background;
         color: #fff;
 
         .header-content {

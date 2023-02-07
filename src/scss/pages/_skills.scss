@@ -1,9 +1,5 @@
 .tab-content-item {
 
-    .languages h2 {
-        font-size: 3em
-    }
-
     .programming-lang-container {
         @include grid(repeat(3, 1fr));
         place-items: center;

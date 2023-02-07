@@ -1,5 +1,45 @@
 @use "sass:string";
 
+$colors: (
+    "white": $text-white,
+    "black": $text-black,
+);
+
+@each $key,
+$val in $colors {
+    .text-#{$key} {
+        color: $val
+    }
+
+    @for $i from 1 through 9 {
+        .text-#{key}-light-#{$i} {
+            color: mix(white, $val, $i * 10%)
+        }
+
+        .text-#{key}-dark-#{$i} {
+            color: mix(black, $val, $i * 10%)
+        }
+    }
+}
+
+$base-font-size: 1em;
+
+$font-size: (
+    "sm": $base-font-size * 1,
+    "md": $base-font-size * 1.5,
+    "lg": $base-font-size * 2,
+    "xl": $base-font-size * 2.5,
+    "xxl": $base-font-size * 3,
+);
+
+@each $key,
+$val in $font-size {
+    .text-#{$key} {
+        font-size: $val
+    }
+}
+
+
 $base-size: 1em;
 
 $sizes: (

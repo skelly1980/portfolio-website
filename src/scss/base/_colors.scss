@@ -1,6 +1,8 @@
 $header-background: #4d004d;
 $tab-background: hsl(0, 100%, 30%);
 $contact-background-color: #ff9933;
+$bg-white: #ffffff;
+$bg-black: #000000;
 
 
 
@@ -8,20 +10,22 @@ $colors: (
     "purple": $header-background,
     "red": $tab-background,
     "orange": $contact-background-color,
+    "white": $bg-white,
+    "black": $bg-black,
 );
 
-@each $color,
+@each $key,
 $val in $colors {
-    .bg-#{$color} {
+    .bg-#{$key} {
         background-color: $val
     }
 
     @for $i from 1 through 9 {
-        .bg-#{color}-light-#{$i} {
+        .bg-#{$key}-light-#{$i} {
             background-color: mix(white, $val, $i * 10%)
         }
 
-        .bg-#{color}-dark-#{$i} {
+        .bg-#{$key}-dark-#{$i} {
             background-color: mix(black, $val, $i * 10%)
         }
     }

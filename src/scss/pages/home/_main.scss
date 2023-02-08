@@ -1,0 +1,13 @@
+main {
+    section .tabs .container {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        @include grid(repeat(2, 1fr));
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    section .container {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+    }
+}

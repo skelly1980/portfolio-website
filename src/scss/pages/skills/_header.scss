@@ -1,0 +1,85 @@
+header {
+    .container {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        color: #fff;
+        padding: 2rem;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .menu ul {
+        justify-content: space-evenly
+    }
+
+    nav .menu ul li {
+        padding-inline: 2rem;
+    }
+
+    nav .menu ul li a:hover {
+        border-bottom: 3px solid #fff;
+        color: #fff;
+    }
+}
+
+section {
+    .container {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        justify-content: space-between;
+        color: #fff;
+        padding: 2rem;
+
+        .header-content {
+
+            & p {
+                padding: 1rem 0;
+            }
+        }
+
+        .header-image {
+            padding: 0 2rem;
+        }
+
+        .header-image img {
+            border-radius: 50%;
+            border: 5px solid #e6b800;
+        }
+    }
+
+    @include lg() {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            text-align: center;
+            order: 1;
+        }
+
+        .header-image {
+            order: 0;
+            width: 20%;
+        }
+    }
+
+    .contact {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        @include grid(repeat(2, 1fr));
+        padding: 1rem;
+
+        & ul li {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        & ul li a {
+            padding: 0 .5rem;
+        }
+    }
+}

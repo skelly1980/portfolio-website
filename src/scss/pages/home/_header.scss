@@ -1,6 +1,32 @@
 header {
     .container {
         @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        color: #fff;
+        padding: 2rem;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .menu ul {
+        justify-content: space-evenly
+    }
+
+    nav .menu ul li {
+        padding-inline: 2rem;
+    }
+
+    nav .menu ul li a:hover {
+        border-bottom: 3px solid #fff;
+        color: #fff;
+    }
+}
+
+section {
+    .container {
+        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
         justify-content: space-between;
         color: #fff;
         padding: 2rem;

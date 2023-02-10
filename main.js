@@ -1,6 +1,13 @@
+const btn = document.getElementById('mobile-btn');
+const menu = document.getElementById('mobile-nav-menu');
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 const tabHeader = document.getElementById('tab-header');
+
+
+btn.addEventListener('click', () => {
+	menu.classList.toggle('open');
+});
 
 
 // Select tab content item

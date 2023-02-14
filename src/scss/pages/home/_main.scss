@@ -11,3 +11,7 @@ main {
         @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
     }
 }
+
+.container {
+    @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+}

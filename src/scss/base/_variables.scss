@@ -43,3 +43,21 @@ $size-value in $sizes {
         }
     }
 }
+
+$grid-gap: 1rem;
+
+$gap-sizes: (
+    "xs": $grid-gap * 0.5,
+    "sm": $grid-gap * 1,
+    "md": $grid-gap * 1.5,
+    "lg": $grid-gap * 2,
+    "xl": $grid-gap * 2.5,
+    "xxl": $grid-gap * 3,
+);
+
+@each $key,
+$val in $gap-sizes {
+    .grid-gap-#{$key} {
+        gap: $val;
+    }
+}

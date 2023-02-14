@@ -24,7 +24,7 @@ header {
         display: none;
     }
 
-    @include lg() {
+    @include sm() {
         .container nav {
             display: none;
         }

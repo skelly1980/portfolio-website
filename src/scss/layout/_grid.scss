@@ -1,0 +1,98 @@
+@use "sass:math";
+
+$grid-col-1: 1fr;
+$grid-col-2: repeat(2, 1fr);
+$grid-col-3: repeat(3, 1fr);
+$grid-col-4: repeat(4, 1fr);
+$grid-col-5: repeat(5, 1fr);
+$grid-col-6: repeat(6, 1fr);
+$grid-col-7: repeat(7, 1fr);
+$grid-col-8: repeat(8, 1fr);
+$grid-col-9: repeat(9, 1fr);
+$grid-col-10: repeat(10, 1fr);
+$grid-col-11: repeat(11, 1fr);
+$grid-col-12: repeat(12, 1fr);
+
+$grid-template-columns: (
+    "1": $grid-col-1,
+    "2": $grid-col-2,
+    "3": $grid-col-3,
+    "4": $grid-col-4,
+    "5": $grid-col-5,
+    "6": $grid-col-6,
+    "7": $grid-col-7,
+    "8": $grid-col-8,
+    "9": $grid-col-9,
+    "10": $grid-col-10,
+    "11": $grid-col-11,
+    "12": $grid-col-12,
+);
+
+
+@each $key,
+$val in $grid-template-columns {
+    .grid-#{$key} {
+        display: grid;
+        grid-template-columns: $val;
+    }
+}
+
+@include xl {
+
+    @each $key,
+    $val in $grid-template-columns {
+        .grid-#{$key}-xl {
+            display: grid;
+            gap: 2.5rem;
+            grid-template-columns: $val;
+        }
+    }
+}
+
+@include lg {
+
+    @each $key,
+    $val in $grid-template-columns {
+        .grid-#{$key}-lg {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: $val;
+        }
+    }
+}
+
+@include md {
+
+    @each $key,
+    $val in $grid-template-columns {
+        .grid-#{$key}-md {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: $val;
+        }
+    }
+}
+
+@include sm {
+
+    @each $key,
+    $val in $grid-template-columns {
+        .grid-#{$key}-sm {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: $val;
+        }
+    }
+}
+
+@include xs {
+
+    @each $key,
+    $val in $grid-template-columns {
+        .grid-#{$key}-xs {
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: $val;
+        }
+    }
+}

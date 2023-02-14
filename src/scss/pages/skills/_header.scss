@@ -70,7 +70,6 @@ section {
 
     .contact {
         @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
-        @include grid(repeat(2, 1fr));
         padding: 1rem;
 
         & ul li {

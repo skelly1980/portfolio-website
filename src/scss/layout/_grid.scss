@@ -44,6 +44,7 @@ $val in $grid-template-columns {
         .grid-#{$key}-xl {
             display: grid;
             gap: 2.5rem;
+            margin: 0 auto;
             grid-template-columns: $val;
         }
     }

@@ -1,12 +1,15 @@
 const btn = document.getElementById('mobile-btn');
+const btnClose = document.getElementById("close");
+const btnOpen = document.getElementById("open");
 const menu = document.getElementById('mobile-nav-menu');
+
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 const tabHeader = document.getElementById('tab-header');
 
-
 btn.addEventListener('click', () => {
 	menu.classList.toggle('open');
+	btnClose.classList.toggle('open');
 });
 
 

@@ -39,9 +39,8 @@ a {
     text-decoration: none;
 }
 
-.show {
-    display: block !important;
-    opacity: 1 !important;
+.d-block {
+    display: block;
 }
 
 .flex {
@@ -54,8 +53,4 @@ a {
 
 .align-center {
     align-items: center;
-}
-
-.text-center {
-    text-align: center;
 }

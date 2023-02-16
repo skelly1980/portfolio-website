@@ -30,8 +30,22 @@ main {
             padding: 0 .5rem;
         }
     }
-}
 
-.conatiner {
-    @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+    @include lg () {
+        .wk-exp h2 {
+            padding: 2rem;
+        }
+
+        .tab-content {
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .suny h3,
+        .lowes h3,
+        .tightlines h3,
+        .orvis h3 {
+            text-align: center;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 $text-white: #ffffff;
 $text-black: #333;
 
+
 $base-font-size: 1em;
 
 $font-size: (
@@ -30,12 +31,36 @@ $val in $colors {
     }
 
     @for $i from 1 through 9 {
-        .text-#{key}-light-#{$i} {
+        .text-#{$key}-light-#{$i} {
             color: mix(white, $val, $i * 10%)
         }
 
-        .text-#{key}-dark-#{$i} {
+        .text-#{$key}-dark-#{$i} {
             color: mix(black, $val, $i * 10%)
         }
+    }
+}
+
+//$directions: center, end, justify, left, right, start;
+
+$text-left: left;
+$text-center: center;
+$text-end: end;
+$text-justify: justify;
+$text-right: right;
+$text-start: start;
+
+$text-align: (
+    "left": $text-left,
+    "center": $text-center,
+    "end": $text-end,
+    "justify": $text-justify,
+    "right": $text-right,
+);
+
+@each $key,
+$val in $text-align {
+    .text-#{$key} {
+        text-align: $val;
     }
 }

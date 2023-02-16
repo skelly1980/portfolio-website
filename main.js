@@ -7,10 +7,18 @@ const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.tab-content-item');
 const tabHeader = document.getElementById('tab-header');
 
-btn.addEventListener('click', () => {
-	menu.classList.toggle('open');
-	btnClose.classList.toggle('open');
-});
+btn.addEventListener('click', openBtn);
+btnClose.addEventListener('click', closeBtn);
+
+function openBtn () {
+	menu.style.display = "block";
+	btnOpen.style.display = "none";
+}
+
+function closeBtn (){
+	menu.style.display = "none";
+	btnOpen.style.display = "block";
+}
 
 
 // Select tab content item

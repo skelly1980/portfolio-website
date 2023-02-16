@@ -32,35 +32,6 @@ main {
     }
 }
 
-.container {
+.conatiner {
     @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
-
-    .container:nth-child(1) {
-        background-color: orange;
-    }
-
-    .column:nth-child(2) {
-        background-color: purple;
-    }
-
-    .column:nth-child(3) {
-        background-color: red;
-    }
-
-    .column:nth-child(4) {
-        background-color: green;
-    }
-
-    .column:nth-child(5) {
-        background-color: yellow;
-    }
-
-    .column .row>p:nth-child(1) {
-        background-color: #fff;
-        text-align: center;
-    }
-
-    .column .row p:nth-child(2) {
-        background-color: blue;
-    }
 }

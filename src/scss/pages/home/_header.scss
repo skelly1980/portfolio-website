@@ -24,18 +24,9 @@ header {
         display: none;
     }
 
-    #close {
-        display: none;
-    }
-
     @include lg() {
         h1 {
             text-align: center;
-        }
-
-        .header-image img {
-            width: 50%;
-            height: 50%;
         }
     }
 
@@ -46,6 +37,7 @@ header {
 
         .mobile-menu {
             display: block;
+            position: relative;
         }
 
         button {
@@ -55,17 +47,28 @@ header {
         }
 
         button .fa-solid {
+            position: absolute;
+            top: 0;
+            left: 0;
             font-size: 2.5em;
             color: #fff;
         }
 
+        .fa-x {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 1.5em;
+        }
+
         .mobile-nav-menu {
+            display: none;
             position: fixed;
-            top: 147px;
-            left: 40px;
+            top: 90px;
+            left: 20px;
             background-color: $mobile-menu-background;
             transition: all 0.3s ease-in-out;
-            width: 90%;
+            width: 80%;
             z-index: 1;
         }
 
@@ -102,6 +105,8 @@ section {
         }
 
         .header-image img {
+            height: auto;
+            object-fit: cover;
             border-radius: 50%;
             border: 5px solid #e6b800;
         }

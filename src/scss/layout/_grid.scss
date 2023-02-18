@@ -43,7 +43,6 @@ $val in $grid-template-columns {
     $val in $grid-template-columns {
         .grid-#{$key}-xl {
             display: grid;
-            gap: 2.5rem;
             margin: 0 auto;
             padding: 0 2rem;
             grid-template-columns: $val;
@@ -57,7 +56,6 @@ $val in $grid-template-columns {
     $val in $grid-template-columns {
         .grid-#{$key}-lg {
             display: grid;
-            gap: 2rem;
             padding: 0 2rem;
             grid-template-columns: $val;
         }
@@ -70,7 +68,7 @@ $val in $grid-template-columns {
     $val in $grid-template-columns {
         .grid-#{$key}-md {
             display: grid;
-            gap: 1.5rem;
+            margin: 0 auto;
             padding: 0 2rem;
             grid-template-columns: $val;
         }
@@ -83,7 +81,6 @@ $val in $grid-template-columns {
     $val in $grid-template-columns {
         .grid-#{$key}-sm {
             display: grid;
-            gap: 1rem;
             margin: 0 auto;
             padding: 0 2rem;
             grid-template-columns: $val;
@@ -97,7 +94,7 @@ $val in $grid-template-columns {
     $val in $grid-template-columns {
         .grid-#{$key}-xs {
             display: grid;
-            gap: 0.5rem;
+            margin: 0 auto;
             padding: 0 2rem;
             grid-template-columns: $val;
         }

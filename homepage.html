@@ -20,37 +20,72 @@
 	</head>
 
 	<body>
-		<header class="bg-purple-dark-4">
+		<header>
+      <section>
+        <div class="bg-purple-dark-4">
 			<div class="container">
 				<nav class="grid-2 grid-1-lg">
-					<h1 class="text-xl text-white">Shawn Kelly</h1>
+					<h1 class="text-xl text-white scale-in-center">Shawn Kelly</h1>
 					<div class="menu">
-						<ul class="flex">
+            <!-- large screen menu -->
+            <div class="large-screen-menu">
+						<ul class="flex bg-purple-light-1 padding-block-2 border-radius-10">
 							<li>
-								<a
-									class="text-white text-sm"
+                <a
+									class="text-white text-sm padding-1 border-radius-5"
+									href="homepage.html"
+									target="_blank"
+									><i class="fa-solid fa-house"></i></a
+								>
+                <h3 class="bg-orange padding-1 border-radius-5">Work Experience</h3>
+							</li>
+							<li>
+                <a class="text-white text-sm padding-1 border-radius-5" href="skills.html" target="_blank"
+									><i class="fa-solid fa-code"></i></a
+								>
+                <h3 class="bg-orange padding-1 border-radius-5">Skills</h3>
+							</li>
+							<li>
+                <a
+									class="text-white text-sm padding-1 border-radius-5"
+									href="education.html"
+									target="_blank"
+									><i class="fa-solid fa-school"></a
+								></i>
+                <h3 class="bg-orange padding-1 border-radius-5">Education</h3>
+							</li>
+						</ul>
+          </div>
+            <!-- Small Screen Menu -->
+            <div class="small-screen-menu">
+            <ul class="flex bg-purple-light-1 padding-block-2 border-radius-10">
+							<li>
+                <a
+									class="text-white text-md padding-1 border-radius-5"
 									href="homepage.html"
 									target="_blank"
 									>Work Experience</a
 								>
 							</li>
 							<li>
-								<a class="text-white text-sm" href="skills.html" target="_blank"
+                <a class="text-white text-md padding-1 border-radius-5" href="skills.html" target="_blank"
 									>Skills</a
 								>
 							</li>
 							<li>
-								<a
-									class="text-white text-sm"
+                <a
+									class="text-white text-md padding-1 border-radius-5"
 									href="education.html"
 									target="_blank"
 									>Education</a
-								>
+								></i>
 							</li>
 						</ul>
+          </div>
 					</div>
 				</nav>
-
+      </div>
+      
 				<div class="mobile-menu">
 					<h1 class="text-xl text-white text-center">Shawn Kelly</h1>
 					<button id="mobile-btn">
@@ -78,9 +113,11 @@
 					</div>
 				</div>
 			</div>
+    </section>
 		</header>
 
-		<section class="bg-purple">
+		<section>
+      <div class="bg-purple padding-block-6">
 			<div class="container">
 				<div class="grid-2 grid-1-xl">
 					<div class="header-content slide-top">
@@ -98,7 +135,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg-orange">
+    </div>
+    </section>
+
+    <section>
+			<div class="contact-list bg-orange padding-block-8">
 				<div class="container text-center">
 					<div class="grid-2 grid-1-sm contact">
 						<div class="list-1 slide-left">

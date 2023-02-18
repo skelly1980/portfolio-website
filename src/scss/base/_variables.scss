@@ -1,5 +1,22 @@
 @use "sass:string";
 
+$border-radius: 5px;
+
+$radius-sizes: (
+    "5": $border-radius * 1,
+    "10": $border-radius * 2,
+    "15": $border-radius * 3,
+    "20": $border-radius * 4,
+    "25": $border-radius * 5
+);
+
+@each $key,
+$val in $radius-sizes {
+    .border-radius-#{$key} {
+        border-radius: $val;
+    }
+}
+
 $base-size: 1em;
 
 $sizes: (
@@ -13,7 +30,7 @@ $sizes: (
     "size-8": $base-size * 3,
 );
 
-$sides: inline, inline-start, inline-end, block, block-start;
+$sides: inline, inline-start, inline-end, block, block-start, block-end, top, bottom, left, right;
 
 @each $size-number,
 $size-value in $sizes {

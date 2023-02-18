@@ -1,14 +1,13 @@
 main {
     section .tabs .container {
-        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
-        @include grid(repeat(2, 1fr));
+        @include container(100%, 1200px, hidden, 0 auto);
         align-items: center;
         justify-content: center;
         text-align: center;
     }
 
     section .container {
-        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        @include container(100%, 1200px, hidden, 0 auto);
     }
 
     @include lg() {
@@ -18,7 +17,7 @@ main {
     }
 
     .contact {
-        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
+        @include container(100%, 1200px, hidden, 0 auto);
         padding: 1rem;
 
         & ul li {

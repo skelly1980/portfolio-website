@@ -1684,15 +1684,6 @@ a {
   }
 }
 header .container {
-  width: calc(100% + 2rem);
-  max-width: 1200px;
-  overflow: hidden;
-  margin: 0 auto;
-  justify-content: center;
-  padding: 2rem;
-}
-
-header .container {
   width: 100%;
   max-width: 1200px;
   overflow: hidden;

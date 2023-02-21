@@ -1265,6 +1265,136 @@ a {
   background-color: black;
 }
 
+.btn-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #4d004d;
+}
+.btn-purple:hover {
+  background-color: #670067;
+}
+
+.btn-outlined-purple {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid #4d004d;
+}
+.btn-outlined-purple:hover {
+  background-color: #4d004d;
+}
+
+.btn-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: hsl(0deg, 100%, 30%);
+}
+.btn-red:hover {
+  background-color: #b30000;
+}
+
+.btn-outlined-red {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid hsl(0deg, 100%, 30%);
+}
+.btn-outlined-red:hover {
+  background-color: hsl(0deg, 100%, 30%);
+}
+
+.btn-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff9933;
+}
+.btn-orange:hover {
+  background-color: #ffa64d;
+}
+
+.btn-outlined-orange {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid #ff9933;
+}
+.btn-outlined-orange:hover {
+  background-color: #ff9933;
+}
+
+.btn-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #ffffff;
+}
+.btn-white:hover {
+  background-color: white;
+}
+
+.btn-outlined-white {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid #ffffff;
+}
+.btn-outlined-white:hover {
+  background-color: #ffffff;
+}
+
+.btn-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #000000;
+}
+.btn-black:hover {
+  background-color: #0d0d0d;
+}
+
+.btn-outlined-black {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  border: 2px solid #000000;
+}
+.btn-outlined-black:hover {
+  background-color: #000000;
+}
+
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr;

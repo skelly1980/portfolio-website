@@ -5,14 +5,42 @@ $bg-white: #ffffff;
 $bg-black: #000000;
 $mobile-menu-background: rgba(0, 0, 0, 0.7);
 
-
-
-$colors: (
+$varColors: (
     "purple": $header-background,
     "red": $tab-background,
     "orange": $contact-background-color,
     "white": $bg-white,
     "black": $bg-black,
+);
+
+@each $key,
+$val in $varColors {
+    .var-color-#{$key} {
+        background-color: $val;
+    }
+
+    @for $i from 1 through 9 {
+        .var-color-#{$key}-light-#{$i} {
+            background-color: mix(white, $val, $i * 10%)
+        }
+
+        .var-color-#{$key}-dark-#{$i} {
+            background-color: mix(black, $val, $i * 10%)
+        }
+    }
+}
+
+
+$colors: (
+    "white": #ffffff,
+    "black": #000000,
+    "blue": #0000ff,
+    "green": #008000,
+    "yellow": #ffff00,
+    "pink": #ffc0cb,
+    "orange": #ffa500,
+    "purple": #800080,
+    "red": #ff0000
 );
 
 @each $key,

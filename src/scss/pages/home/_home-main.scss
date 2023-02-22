@@ -10,9 +10,76 @@ main {
         @include container(100%, 1200px, hidden, 0 auto);
     }
 
+    .work {
+        position: relative;
+    }
+
+    .jobs {
+        .suny h2 {
+            position: absolute;
+            top: -20px;
+            z-index: 1500;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .lowes h2 {
+            position: absolute;
+            top: 25px;
+            z-index: 1500;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .tightlines h2 {
+            position: absolute;
+            top: 25px;
+            z-index: 1500;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .orvis h2 {
+            position: absolute;
+            top: 25px;
+            z-index: 1500;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .header-small {
+            display: none;
+        }
+
+    }
+
     @include lg() {
+        body {
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
         section {
             text-align: center;
+        }
+
+        .suny h2,
+        .lowes h2,
+        .tightlines h2,
+        .orvis h2 {
+            display: none;
+        }
+
+        .suny h3,
+        .lowes h3,
+        .tightlines h3,
+        .orvis h3 {
+            text-align: center;
+        }
+
+        .suny,
+        .lowes,
+        .tightlines,
+        .orvis {
+            .header-small {
+                display: block;
+            }
         }
     }
 
@@ -28,9 +95,7 @@ main {
         & ul li a {
             padding: 0 .5rem;
         }
-    }
 
-    @include lg () {
         .wk-exp h2 {
             padding: 2rem;
         }

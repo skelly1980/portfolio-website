@@ -23,6 +23,7 @@ header {
             .fa-code,
             .fa-school {
                 font-size: 1.5em;
+                color: #fff;
                 position: relative;
                 z-index: 20;
             }
@@ -48,6 +49,7 @@ header {
     @include lg() {
         h1 {
             text-align: center;
+            padding-bottom: 2rem;
         }
 
         .large-screen-menu {
@@ -113,8 +115,8 @@ header {
         .mobile-nav-menu {
             display: none;
             position: fixed;
-            top: 130px;
-            left: 20px;
+            top: 60px;
+            left: 10px;
             background-color: black;
             transition: all 0.3s ease-in-out;
             width: 90%;

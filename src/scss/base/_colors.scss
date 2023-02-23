@@ -59,3 +59,20 @@ $val in $colors {
         }
     }
 }
+
+@each $key,
+$val in $colors {
+    .border-#{$key} {
+        border: 2px solid $val;
+    }
+
+    @for $i from 1 through 9 {
+        .bg-#{$key}-light-#{$i} {
+            border: 2px solid mix(white, $val, $i * 10%)
+        }
+
+        .bg-#{$key}-dark-#{$i} {
+            border: 2px solid mix(black, $val, $i * 10%)
+        }
+    }
+}

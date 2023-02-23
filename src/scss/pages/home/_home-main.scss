@@ -83,33 +83,9 @@ main {
         }
     }
 
-    .contact {
-        @include container(100%, 1200px, hidden, 0 auto);
-        padding: 1rem;
-
-        & ul li {
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        & ul li a {
-            padding: 0 .5rem;
-        }
-
-        .wk-exp h2 {
-            padding: 2rem;
-        }
-
-        .tab-content {
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .suny h3,
-        .lowes h3,
-        .tightlines h3,
-        .orvis h3 {
-            text-align: center;
+    @include sm() {
+        .grid-1 {
+            padding-inline: 0;
         }
     }
 }

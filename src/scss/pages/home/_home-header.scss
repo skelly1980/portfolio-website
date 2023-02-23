@@ -9,10 +9,6 @@ header {
         justify-content: space-between;
     }
 
-    .small-screen-menu {
-        display: none;
-    }
-
     nav .menu ul {
         align-items: center;
         justify-content: space-evenly;
@@ -113,21 +109,34 @@ header {
         }
 
         .mobile-nav-menu {
-            display: none;
             position: fixed;
-            top: 60px;
-            left: 10px;
-            background-color: black;
+            inset: 60px 0 0 10px;
             transition: all 0.3s ease-in-out;
             width: 90%;
             z-index: 1000;
+            cursor: pointer;
         }
 
         .mobile-nav-menu ul {
             flex-direction: column;
-            align-items: center;
+            align-items: stretch;
             justify-content: space-around;
-            height: 90vh;
+            cursor: pointer;
+            height: 100vh;
+
+            li {
+                text-align: center;
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 4rem 0;
+                }
+            }
+        }
+
+        .mobile-nav-menu li:hover {
+            background: red;
         }
 
         .open {
@@ -173,6 +182,18 @@ section {
             border-radius: 50%;
             border: 5px solid #e6b800;
         }
+    }
+
+    .contact-list {
+        padding-block: 0;
+    }
+
+    .contact-list .container {
+        padding: 1rem;
+    }
+
+    .contact-list ul li {
+        padding-block-start: 2em;
     }
 
     @include xl () {

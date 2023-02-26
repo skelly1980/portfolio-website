@@ -1,81 +1,37 @@
-/*
-.tab-content-item {
+main {
+    section {
+        position: relative;
 
-    .container {
-        @include container(calc(100% + 2rem), 1200px, hidden, 0 auto);
-        justify-content: space-between;
+        #tab-1-content,
+        #tab-2-content,
+        #tab-3-content,
+        #tab-4-content,
+        #tab-5-content,
+        #tab-6-content,
+        #ux-1-content,
+        #ux-2-content,
+        #ux-3-content {
+            display: none;
+        }
 
-        .programming-lang-container {
-            @include grid(repeat(3, 1fr));
-            place-items: center;
-            gap: 2rem;
+        .tab-content .grid-3 p {
+            grid-column: 2 / 4;
+        }
 
-            .html-logo {
-                height: 150px;
-                width: 150px;
+        .tab-content img {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
 
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.4);
-                    border-radius: 5px;
-                    padding: 1rem;
-                }
-            }
+        .tab-ux-content .grid-3 p {
+            grid-column: 2 / 4;
+        }
 
-            .css-logo {
-                height: 190px;
-                width: 180px;
-
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.4);
-                    border-radius: 5px;
-                    padding: 1rem;
-                }
-            }
-
-            .javascript-logo {
-                height: 160px;
-                width: 250px;
-
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.4);
-                    border-radius: 5px;
-                    padding: 1rem;
-                }
-            }
-
-            .sass-logo {
-                height: 140px;
-                width: 150px;
-
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.4);
-                    border-radius: 5px;
-                    padding: 1rem;
-                }
-            }
-
-            .php-logo {
-                height: 170px;
-                width: 210px;
-
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.4);
-                    border-radius: 5px;
-                    padding: 1rem;
-                }
-            }
-
-            .mysql-logo {
-                height: 170px;
-                width: 210px;
-
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.4);
-                    border-radius: 5px;
-                    padding: 1rem;
-                }
-            }
+        .tab-ux-content img {
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
         }
     }
 }
-*/

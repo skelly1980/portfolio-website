@@ -78,3 +78,7 @@ $val in $gap-sizes {
         gap: $val;
     }
 }
+
+.border {
+    border-bottom: 10px solid #fff;
+}

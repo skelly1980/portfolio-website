@@ -1,7 +1,0 @@
-footer {
-    .container {
-        @include container(100%, 1200px, hidden, 0 auto);
-        justify-content: space-between;
-        color: #fff;
-    }
-}

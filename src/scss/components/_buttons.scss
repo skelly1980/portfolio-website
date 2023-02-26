@@ -27,3 +27,25 @@ $val in $colors {
         }
     }
 }
+
+.scroll {
+    position: fixed;
+    display: none;
+    inset: 90% 0 0 90%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 2rem;
+    border: 2px solid #fff;
+
+    .fa-chevron-up {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    &:hover {
+        transform: scale(120%, 120%);
+    }
+}

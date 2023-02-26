@@ -1,297 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skills</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="public/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container bg-purple">
-        <nav class="flex">
-          <h1 class="text-xl text-white">Shawn Kelly</h1>
-          <div class="menu">
-            <ul class="flex">
-              <li>
-                <a class="text-white" href="homepage.html" target="_blank"
-                  >Work Experience</a
-                >
-              </li>
-              <li>
-                <a class="text-white" href="skills.html" target="_blank"
-                  >Skills</a
-                >
-              </li>
-              <li>
-                <a class="text-white" href="education.html" target="_blank"
-                  >Education</a
-                >
-              </li>
-            </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Skills</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="public/css/style.css" />
+    <script src="main.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <script
+			src="https://kit.fontawesome.com/bb55158e46.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header>
+      <section>
+        <div class="var-color-purple-dark-4">
+			<div class="container padding-block-6">
+				<nav class="grid-2 grid-1-lg">
+					<h1 class="text-white scale-in-center">Shawn Kelly</h1>
+					<div class="menu">
+            <!-- large screen menu -->
+            <div class="large-screen-menu">
+						<ul class="flex var-color-purple-light-1 padding-block-2 border-radius-10">
+							<li>
+                <a
+									class="text-white text-sm padding-1 border-radius-5"
+									href="index.html"
+									target="_blank"
+									><i class="fa-solid fa-house"></i></a
+								>
+                <h3 hidden class="var-color-orange padding-1 border-radius-5">Work Experience</h3>
+							</li>
+							<li>
+                <a class="text-white text-sm padding-1 border-radius-5" href="skills.html" target="_blank"
+									><i class="fa-solid fa-code"></i></a
+								>
+                <h3 hidden class="var-color-orange padding-1 border-radius-5">Skills</h3>
+							</li>
+							<li>
+                <a
+									class="text-white text-sm padding-1 border-radius-5"
+									href="education.html"
+									target="_blank"
+									><i class="fa-solid fa-school"></a
+								></i>
+                <h3 hidden class="var-color-orange padding-1 border-radius-5">Education</h3>
+							</li>
+						</ul>
           </div>
-        </nav>
+            <!-- Small Screen Menu -->
+            <div hidden class="small-screen-menu">
+            <ul class="flex var-color-purple-light-1 padding-block-2 border-radius-10">
+							<li>
+                <a
+									class="text-white text-md padding-1 border-radius-5"
+									href="index.html"
+									target="_blank"
+									>Work Experience</a
+								>
+							</li>
+							<li>
+                <a class="text-white text-md padding-1 border-radius-5" href="skills.html" target="_blank"
+									>Skills</a
+								>
+							</li>
+							<li>
+                <a
+									class="text-white text-md padding-1 border-radius-5"
+									href="education.html"
+									target="_blank"
+									>Education</a
+								></i>
+							</li>
+						</ul>
+          </div>
+					</div>
+				</nav>
       </div>
-    </header>
+      
+	  <!-- Mobile Menu -->
+				<div class="mobile-menu">
+					<h1 class="text-white text-center">Shawn Kelly</h1>
+					<button id="mobile-btn">
+						<i id="open" class="fa-solid fa-bars"></i>
+					</button>
+					<div class="mobile-nav">
+						<div hidden id="mobile-nav-menu" class="mobile-nav-menu var-color-orange">
+							<i id="close" class="fa-solid fa-x"></i>
+							<ul class="flex">
+								<li>
+									<a class="text-white text-md" href="index.html"
+										>Work Experience</a
+									>
+								</li>
+								<li>
+									<a class="text-white text-md" href="skills.html">Skills</a>
+								</li>
+								<li>
+									<a class="text-white text-md" href="education.html"
+										>Education</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+    </section>
+		</header>
 
-    <section>
-      <div class="container flex bg-purple">
-        <div class="header-content slide-top">
-          <h2 class="text-lg">Web Development Specialist</h2>
-          <p>
-            Seeking an internship in the UX/UI field. Currently an honors
-            student at University at Albany majoring in Informatics with a
-            concentration in web design, Fluent in html, css, moderate
-            Javascript fluency, php, and MySQL.
-          </p>
-        </div>
-        <div class="header-image slide-right">
-          <img
-            src="src/assets/farmy-brown.png"
-            alt=""
-            width="300"
-            height="175"
-          />
-        </div>
-      </div>
-      <div class="contact bg-orange">
-        <div class="list-1 slide-left">
-          <ul>
-            <li>
-              <i class="fa-regular fa-envelope text-white"></i
-              ><a class="text-white" href="#" target="_blank"
-                >skelly@yahoo.com</a
-              >
-            </li>
-            <li>
-              <i class="fa-light fa-location-dot text-white"></i
-              ><a class="text-white" href="#" target="_blank"
-                >Clifton Park, NY 12065</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="list-2 slide-right">
-          <ul>
-            <li>
-              <i class="fa-solid fa-mobile-screen-button text-white"></i
-              ><a class="text-white" href="#" target="_blank">203-460-4609</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-linkedin text-white"></i
-              ><a
-                class="text-white"
-                href="https://www.linkedin.com/feed/"
-                target="_blank"
-                >linkedin</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+		<section>
+      <div class="var-color-purple padding-block-6">
+			<div class="container">
+				<div class="grid-2 grid-1-xl bg-image text-white">
+					<div class="header-content spacer
+					slide-top">
+						<img class="small-img" src="src/assets/farmy-brown.png" alt="" />
+						<h2 class="text-lg">Web Development Specialist</h2>
+						<p>
+							Seeking an internship in the UX/UI field. Currently an honors
+							student at University at Albany majoring in Informatics <br />with
+							a concentration in web design, Fluent in html, css, moderate
+							Javascript fluency, php, and MySQL.
+						</p>
+					</div>
+					<div class="header-image slide-right">
+						<img class="full-img" src="src/assets/farmy-brown.png" alt="" />
+					</div>
+				</div>
+			</div>
+    </div>
     </section>
 
-    <main>
-      <!-- Tab Content 2 -->
-      <section>
-        <div id="tab-2-content" class="tab-content-item">
-          <div class="container bg-red padding-4">
-            <div class="languages text-center">
-              <h2 class="text-white padding-block-3 text-xxl">
-                Web Development
-              </h2>
-              <div class="programming-lang-container padding-block-4">
-                <div class="html-container">
-                  <a href="#html">
-                    <h4 class="text-white text-center text-md padding-block-4">
-                      html5
-                    </h4>
-                    <img
-                      class="html-logo"
-                      src="src/assets/html5-logo.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="css-container">
-                  <a href="#css">
-                    <h4 class="text-white text-center text-md padding-block-4">
-                      CSS3
-                    </h4>
-                    <img
-                      class="css-logo"
-                      src="src/assets/css3-icon-logo.png"
-                      alt=""
-                  /></a>
-                </div>
-                <div class="javaScript-container">
-                  <a href="#javascript">
-                    <h4 class="text-white text-center text-md padding-block-4">
-                      JavaScript
-                    </h4>
-                    <img
-                      class="javascript-logo"
-                      src="/src/assets/javascript-logo-icon.png"
-                      alt=""
-                      srcset=""
-                  /></a>
-                </div>
-                <div class="sass-container">
-                  <a href="#sass">
-                    <h4 class="text-white text-center text-md padding-block-4">
-                      Sass/Scss
-                    </h4>
-                    <img
-                      class="sass-logo"
-                      src="/src/assets/sass-logo-icon.png"
-                      alt=""
-                      srcset=""
-                  /></a>
-                </div>
-                <div class="php-container">
-                  <a href="#php">
-                    <h4 class="text-white text-center text-md padding-block-4">
-                      PHP
-                    </h4>
-                    <img
-                      class="php-logo"
-                      src="/src/assets/PHP-Logo-PNG.png"
-                      alt=""
-                      srcset=""
-                  /></a>
-                </div>
-                <div class="mysql-container">
-                  <a href="#mysql">
-                    <h4 class="text-white text-center text-md padding-block-4">
-                      MySQL
-                    </h4>
-                    <img
-                      class="mysql-logo"
-                      src="/src/assets/mysql-logo-icon.png"
-                      alt=""
-                      srcset=""
-                  /></a>
-                </div>
-              </div>
-            </div>
+    <section>
+			<div class="contact-list var-color-orange padding-block-6">
+				<div class="container text-center">
+					<div class="grid-2 grid-1-sm contact">
+						<div class="list-1 slide-left">
+							<ul>
+								<li>
+									<i class="fa-regular fa-envelope text-white"></i
+									><a
+										class="text-white padding-inline-start-4"
+										href="#"
+										target="_blank"
+										>skelly@yahoo.com</a
+									>
+								</li>
+								<li class="padding-block-start-6">
+									<i class="fa-light fa-location-dot text-white"></i
+									><a
+										class="text-white padding-inline-start-4"
+										href="#"
+										target="_blank"
+										>Clifton Park, NY 12065</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="list-2 slide-right">
+							<ul>
+								<li>
+									<i class="fa-solid fa-mobile-screen-button text-white"></i
+									><a
+										class="text-white padding-inline-start-4"
+										href="#"
+										target="_blank"
+										>203-460-4609</a
+									>
+								</li>
+								<li class="padding-block-start-6">
+									<i class="fa-brands fa-linkedin text-white"></i
+									><a
+										class="text-white padding-inline-start-4"
+										href="https://www.linkedin.com/feed/"
+										target="_blank"
+										>linkedin</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="content-container">
-              <h2 id="html" class="text-white text-lg padding-4">HTML</h2>
-              <p class="padding-block-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur quasi architecto eaque rem inventore consectetur,
-                aliquid animi ullam quod excepturi, reprehenderit possimus
-                provident quibusdam odit nemo repellendus doloribus ut explicabo
-                neque! Vero cupiditate inventore mollitia quis minima saepe
-                minus impedit recusandae ea omnis alias magnam tempore animi
-                dolores ipsam incidunt odio eos, ad ex numquam doloribus! Cum
-                sint consequatur debitis ipsum vitae dolorem recusandae pariatur
-                fugiat alias impedit aspernatur, corrupti, dicta assumenda
-                perferendis quod. Perspiciatis, vitae ex obcaecati fuga non amet
-                expedita vero, animi veritatis autem aut magnam vel repudiandae
-                molestiae, et excepturi optio officia. Vel beatae perspiciatis
-                nostrum ex.
-              </p>
-              <h2 id="css" class="text-white text-lg padding-4">CSS</h2>
-              <p class="padding-block-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur quasi architecto eaque rem inventore consectetur,
-                aliquid animi ullam quod excepturi, reprehenderit possimus
-                provident quibusdam odit nemo repellendus doloribus ut explicabo
-                neque! Vero cupiditate inventore mollitia quis minima saepe
-                minus impedit recusandae ea omnis alias magnam tempore animi
-                dolores ipsam incidunt odio eos, ad ex numquam doloribus! Cum
-                sint consequatur debitis ipsum vitae dolorem recusandae pariatur
-                fugiat alias impedit aspernatur, corrupti, dicta assumenda
-                perferendis quod. Perspiciatis, vitae ex obcaecati fuga non amet
-                expedita vero, animi veritatis autem aut magnam vel repudiandae
-                molestiae, et excepturi optio officia. Vel beatae perspiciatis
-                nostrum ex.
-              </p>
-              <h2 id="javascript" class="text-white text-lg padding-4">
-                JavaScript
-              </h2>
-              <p class="padding-block-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur quasi architecto eaque rem inventore consectetur,
-                aliquid animi ullam quod excepturi, reprehenderit possimus
-                provident quibusdam odit nemo repellendus doloribus ut explicabo
-                neque! Vero cupiditate inventore mollitia quis minima saepe
-                minus impedit recusandae ea omnis alias magnam tempore animi
-                dolores ipsam incidunt odio eos, ad ex numquam doloribus! Cum
-                sint consequatur debitis ipsum vitae dolorem recusandae pariatur
-                fugiat alias impedit aspernatur, corrupti, dicta assumenda
-                perferendis quod. Perspiciatis, vitae ex obcaecati fuga non amet
-                expedita vero, animi veritatis autem aut magnam vel repudiandae
-                molestiae, et excepturi optio officia. Vel beatae perspiciatis
-                nostrum ex.
-              </p>
-              <h2 id="sass" class="text-white text-lg padding-4">Sass/Scss</h2>
-              <p class="padding-block-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur quasi architecto eaque rem inventore consectetur,
-                aliquid animi ullam quod excepturi, reprehenderit possimus
-                provident quibusdam odit nemo repellendus doloribus ut explicabo
-                neque! Vero cupiditate inventore mollitia quis minima saepe
-                minus impedit recusandae ea omnis alias magnam tempore animi
-                dolores ipsam incidunt odio eos, ad ex numquam doloribus! Cum
-                sint consequatur debitis ipsum vitae dolorem recusandae pariatur
-                fugiat alias impedit aspernatur, corrupti, dicta assumenda
-                perferendis quod. Perspiciatis, vitae ex obcaecati fuga non amet
-                expedita vero, animi veritatis autem aut magnam vel repudiandae
-                molestiae, et excepturi optio officia. Vel beatae perspiciatis
-                nostrum ex.
-              </p>
-              <h2 id="php" class="text-white text-lg padding-4">PHP</h2>
-              <p class="padding-block-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur quasi architecto eaque rem inventore consectetur,
-                aliquid animi ullam quod excepturi, reprehenderit possimus
-                provident quibusdam odit nemo repellendus doloribus ut explicabo
-                neque! Vero cupiditate inventore mollitia quis minima saepe
-                minus impedit recusandae ea omnis alias magnam tempore animi
-                dolores ipsam incidunt odio eos, ad ex numquam doloribus! Cum
-                sint consequatur debitis ipsum vitae dolorem recusandae pariatur
-                fugiat alias impedit aspernatur, corrupti, dicta assumenda
-                perferendis quod. Perspiciatis, vitae ex obcaecati fuga non amet
-                expedita vero, animi veritatis autem aut magnam vel repudiandae
-                molestiae, et excepturi optio officia. Vel beatae perspiciatis
-                nostrum ex.
-              </p>
-              <h2 id="mysql" class="text-white text-lg padding-4">MySQL</h2>
-              <p class="padding-block-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consequatur quasi architecto eaque rem inventore consectetur,
-                aliquid animi ullam quod excepturi, reprehenderit possimus
-                provident quibusdam odit nemo repellendus doloribus ut explicabo
-                neque! Vero cupiditate inventore mollitia quis minima saepe
-                minus impedit recusandae ea omnis alias magnam tempore animi
-                dolores ipsam incidunt odio eos, ad ex numquam doloribus! Cum
-                sint consequatur debitis ipsum vitae dolorem recusandae pariatur
-                fugiat alias impedit aspernatur, corrupti, dicta assumenda
-                perferendis quod. Perspiciatis, vitae ex obcaecati fuga non amet
-                expedita vero, animi veritatis autem aut magnam vel repudiandae
-                molestiae, et excepturi optio officia. Vel beatae perspiciatis
-                nostrum ex.
-              </p>
+		<main>
+      <!-- tab section -->
+      <section class="var-color-red">
+        <div class="container">
+          <h2 class="text-center text-white padding-block-4">Web Development</h2>
+        <div class="grid-6 grid-3-lg grid-2-md grid-1-sm padding-block-6">
+            <!-- html -->
+            <div id="tab-1" class="html tabs border">
+              <h3 class="text-md text-center text-white padding-bottom-4">html</h3>
             </div>
-          </div>
-        </div>
-
-        <div id="tab-3-content" class="container bg-orange">
-          <div class="container">
-            <div class="soft-skills-section text-center padding-6">
-              <h2 class="text-xxl text-white">Soft Skills</h2>
+            <!-- css -->
+            <div id="tab-2" class="css tabs">
+              <h3 class="text-md text-center text-white padding-bottom-4">css</h3>
+            </div>
+            <!-- javascript -->
+            <div id="tab-3" class="javascript tabs">
+              <h3 class="text-md text-center text-white padding-bottom-4">javascript</h3>
+            </div>
+            <!-- php -->
+            <div id="tab-4" class="php tabs">
+              <h3 class="text-md text-center text-white padding-bottom-4">php</h3>
+            </div>
+            <!-- scss -->
+            <div id="tab-5" class="scss tabs">
+              <h3 class="text-md text-center text-white padding-bottom-4">scss</h3>
+            </div>
+            <!-- mysql -->
+            <div id="tab-6" class="mysql tabs">
+              <h3 class="text-md text-center text-white padding-bottom-4">mysql</h3>
             </div>
           </div>
         </div>
       </section>
+
+        <!-- tab content -->
+      <section class="var-color-red">
+        <div class="container padding-block-6 border-white border-radius-15 var-color-red-light-2">
+          <div class="grid-1 grid-1-sm">
+            <!-- html section -->
+            <div id="tab-1-content" class="html-content tab-content d-block">
+              <h2 class="text-lg padding-block-4 text-center text-white">html 5</h2>
+              <div class="grid-3">
+              <img src="/src/assets/html5-logo.png" alt="html5-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+            </div>
+            <!-- css section -->
+            <div id="tab-2-content" class="css-content tab-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">css 3</h2>
+              <div class="grid-3">
+              <img src="/src/assets/css3-icon-logo.png" alt="css-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+            <!-- javascript section -->
+            <div id="tab-3-content" class="javascript-content tab-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">Javascript</h2>
+              <div class="grid-3">
+              <img src="/src/assets/javascript-logo-icon.png" alt="javascript-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+            <!-- php section -->
+            <div id="tab-4-content" class="php-content tab-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">php</h2>
+              <div class="grid-3">
+              <img src="/src/assets/PHP-Logo-PNG.png" alt="php-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+            <!-- scss section -->
+            <div id="tab-5-content" class="scss-content tab-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">scss</h2>
+              <div class="grid-3">
+              <img src="/src/assets/sass-logo-icon.png" alt="scss-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+            <!-- mysql section -->
+            <div id="tab-6-content" class="mysql-content tab-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">MySQL</h2>
+              <div class="grid-3">
+              <img src="/src/assets/mysql-logo-icon.png" alt="mysql-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="var-color-red">
+        <div class="container">
+          <h2 class="text-center text-white padding-block-6">UX/UI Design</h2>
+        <div class="grid-3 grid-3-lg grid-2-md grid-1-sm padding-block-6">
+            <!-- photoshop -->
+            <div id="ux-1" class="photoshop ux border">
+              <h3 class="text-md text-center text-white padding-bottom-4">Photoshop</h3>
+            </div>
+            <!-- Illustrator -->
+            <div id="ux-2" class="illustrator ux">
+              <h3 class="text-md text-center text-white padding-bottom-4">Illustrator</h3>
+            </div>
+            <!-- XD -->
+            <div id="ux-3" class="XD ux">
+              <h3 class="text-md text-center text-white padding-bottom-4">XD</h3>
+            </div>
+          </div>
+        </div>
+
+          <!-- tab content -->
+      <section class="var-color-red padding-bottom-8">
+        <div class="container padding-block-6 border-white border-radius-15 var-color-red-light-2">
+          <div class="grid-1 grid-1-sm">
+            <!-- Photoshop section -->
+            <div id="ux-1-content" class="html-content tab-ux-content d-block">
+              <h2 class="text-lg padding-block-4 text-center text-white">Adobe Photoshop</h2>
+              <div class="grid-3">
+              <img src="/src/assets/photoshop.jpeg" alt="html5-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+            </div>
+            <!-- illustrator section -->
+            <div id="ux-2-content" class="css-content tab-ux-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">Adobe Illustrator</h2>
+              <div class="grid-3">
+              <img src="/src/assets/illustrator.jpeg" alt="css-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+            <!-- XD section -->
+            <div id="ux-3-content" class="javascript-content tab-ux-content">
+              <h2 class="text-lg padding-block-6 text-center text-white">Adobe XD</h2>
+              <div class="grid-3">
+              <img src="/src/assets/xd.jpeg" alt="javascript-logo">
+              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
+                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
+                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
+                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
+                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
+                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
+                labore odit ex vero iure ullam repellat.</p>
+            </div>
+          </div>
+      </section>
+
+        <button id="scroll" class="scroll var-color-purple">
+          <i class="fa-solid fa-chevron-up text-white"></i></button>
+      </section>
     </main>
-  </body>
+	</body>
 </html>

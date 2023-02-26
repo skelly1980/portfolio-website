@@ -23,6 +23,7 @@ h6 {
 
 h1 {
     font-weight: 900;
+    font-size: clamp(2em, 5vw + 1em, 4em);
 }
 
 img {
@@ -40,7 +41,7 @@ a {
 }
 
 .d-block {
-    display: block;
+    display: block !important;
 }
 
 .flex {
@@ -57,4 +58,8 @@ a {
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.spacer>*+* {
+    padding-bottom: 1rem;
 }

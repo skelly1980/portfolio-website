@@ -12,6 +12,7 @@ main {
 
     .work {
         position: relative;
+
     }
 
     .jobs {
@@ -84,8 +85,19 @@ main {
     }
 
     @include sm() {
+        main {
+            padding: 2rem;
+        }
+
         .grid-1 {
-            padding-inline: 0;
+            padding: 0;
+        }
+
+        .suny,
+        .lowes,
+        .tightlines,
+        .orvis {
+            border: none;
         }
     }
 }

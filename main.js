@@ -2,10 +2,25 @@ const btn = document.getElementById('mobile-btn');
 const btnClose = document.getElementById("close");
 const btnOpen = document.getElementById("open");
 const menu = document.getElementById('mobile-nav-menu');
+const scroll = document.getElementById('scroll');
 
-const tabItems = document.querySelectorAll('.tab-item');
-const tabContentItems = document.querySelectorAll('.tab-content-item');
-const tabHeader = document.getElementById('tab-header');
+function scrollTop() {
+	document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function () {
+	scrollFunction();
+};
+
+function scrollFunction () {
+	if (document.documentElement.scrollTop > 20) {
+		scroll.style.display = "block";
+	} else {
+		scroll.style.display = "none";
+	}
+}
+
+scroll.addEventListener('click', scrollTop);
 
 btn.addEventListener('click', openBtn);
 btnClose.addEventListener('click', closeBtn);
@@ -13,44 +28,63 @@ btnClose.addEventListener('click', closeBtn);
 function openBtn () {
 	menu.style.display = "block";
 	btnOpen.style.display = "none";
+	document.body.style = "overflow: hidden";
 }
 
 function closeBtn (){
 	menu.style.display = "none";
 	btnOpen.style.display = "block";
+	document.body.style = "overflow: visible";
 }
 
+// select tabs
+const tab = document.querySelectorAll('.tabs');
+const tabContent = document.querySelectorAll('.tab-content');
 
-// Select tab content item
-function selectItem(e) {
-	// Remove all show and border classes
-	removeBackground();
-	removeShow();
+function selectedItems (e){
+    removeBorder();
+    removeShow();
 
-	// Add border to current tab item
-	this.classList.add('tab-background');
-	// Grab content item from DOM
-	const tabContentItem = document.querySelector(`#${this.id}-content`);
-	// Add show class
-	tabContentItem.classList.add('show');
+    this.classList.add('border');
+    
+    const tabContentItem = document.querySelector(`#${this.id}-content`);
+
+    tabContentItem.classList.add('d-block');
+
 }
 
-// Remove background from all tab items
-function removeBackground() {
-	tabItems.forEach(item => {
-		item.classList.remove('tab-background');
-	});
+function removeBorder () {
+  tab.forEach(item => item.classList.remove('border'));
+};
+
+function removeShow () {
+    tabContent.forEach(item => item.classList.remove('d-block'));
+};
+
+tab.forEach(item => item.addEventListener('click', selectedItems));
+
+
+// UX tab section
+const ux= document.querySelectorAll('.ux');
+const tabContentUX = document.querySelectorAll('.tab-ux-content');
+
+function selectItem (e) {
+	borderRemove();
+	showRemove();
+
+	this.classList.add('border');
+
+	const uxContent = document.querySelector(`#${this.id}-content`);
+
+	uxContent.classList.add('d-block');
 }
 
-// Remove show class from all content items
-function removeShow() {
-	tabContentItems.forEach(item => {
-		item.classList.remove('show');
-	});
+function borderRemove(){
+ux.forEach(item => item.classList.remove('border'));
+};
+
+function showRemove () {
+	tabContentUX.forEach(item => item.classList.remove('d-block'));
 }
 
-// Listen for tab item click
-tabItems.forEach(item => {
-	item.addEventListener('click', selectItem);
-});
-
+ux.forEach(item => item.addEventListener('click', selectItem));

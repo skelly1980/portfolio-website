@@ -8,10 +8,11 @@
 
 @import 'components/buttons';
 
+@import 'layout/header';
 @import 'layout/grid';
+@import 'layout/tabs';
 
-@import 'pages/home/home-header';
+//@import 'pages/home/home-header';
 @import 'pages/home/home-main';
-@import 'pages/home/home-footer';
 @import 'pages/skills/skills-header';
 @import 'pages/skills/skills';

@@ -79,6 +79,97 @@ $val in $gap-sizes {
     }
 }
 
+$justify-between: space-between;
+$justify-around: space-around;
+$justify-evenly: space-evenly;
+$justify-center: center;
+$justify-flex-start: flex-start;
+$justify-flex-end: flex-end;
+
+$justify: (
+    "between": $justify-between,
+    "around": $justify-around,
+    "evenly": $justify-evenly,
+    "center": $justify-center,
+    "flex-start": $justify-flex-start,
+    "flex-end": $justify-flex-end
+);
+
+@each $key,
+$val in $justify {
+    .justify-#{$key} {
+        justify-content: $val;
+    }
+}
+
+$align-center: center;
+$align-flex-start: flex-start;
+$align-flex-end: flex-end;
+$align-stretch: stretch;
+$align-baseline: baseline;
+
+$align: (
+    "center": $align-center,
+    "flex-start": $align-flex-start,
+    "flex-end": $align-flex-end,
+    "stretch": $align-stretch,
+    "baseline": $align-baseline
+);
+
+@each $key,
+$val in $align {
+    .align-#{$key} {
+        align-items: $val;
+    }
+}
+
+$align-content-between: space-between;
+$align-content-around: space-around;
+$align-content-stretch: stretch;
+$align-content-center: center;
+$align-content-start: flex-start;
+$align-content-end: flex-end;
+
+
+$align-content: (
+    "space-between": $align-content-between,
+    "space-around": $align-content-around,
+    "stretch": $align-content-stretch,
+    "center": $align-content-center,
+    "flex-start": $align-content-start,
+    "flex-end": $align-content-end
+);
+
+@each $key,
+$val in $align-content {
+    .align-content-#{$key} {
+        align-content: $val;
+    }
+}
+
+$place-baseline: baseline;
+$place-center: center;
+$place-end: end;
+$place-start: start;
+$place-stretch: stretch;
+
+$place-items: (
+    "baseline": $place-baseline,
+    "center": $place-center,
+    "end": $place-end,
+    "start": $place-start,
+    "stretch": $place-stretch
+);
+
+@each $key,
+$val in $place-items {
+    .place-#{$key} {
+        place-items: $val;
+    }
+}
+
+
+
 .border {
     border-bottom: 10px solid #fff;
 }

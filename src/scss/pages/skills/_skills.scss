@@ -14,24 +14,30 @@ main {
             display: none;
         }
 
-        .tab-content .grid-3 p {
-            grid-column: 2 / 4;
+        .tabs {
+            cursor: pointer;
         }
 
         .tab-content img {
-            width: 50%;
+            width: 20%;
             height: auto;
             margin: 0 auto;
-        }
-
-        .tab-ux-content .grid-3 p {
-            grid-column: 2 / 4;
         }
 
         .tab-ux-content img {
             width: 50%;
             height: auto;
             margin: 0 auto;
+        }
+
+        @include lg () {
+            .tab-content .flex {
+                flex-direction: column;
+            }
+
+            .tab-ux-content .flex {
+                flex-direction: column;
+            }
         }
     }
 }

@@ -9,14 +9,15 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
-			rel="stylesheet" />
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="public/css/style.css" />
-		<script
+    <script src="main.js" defer></script>
+    <script
 			src="https://kit.fontawesome.com/bb55158e46.js"
-			crossorigin="anonymous"></script>
-		<script src="main.js" defer></script>
+			crossorigin="anonymous"
+		></script>
 	</head>
-
 	<body>
 		<header>
       <section>
@@ -91,7 +92,7 @@
 						<i id="open" class="fa-solid fa-bars"></i>
 					</button>
 					<div class="mobile-nav">
-						<div hidden id="mobile-nav-menu" class="mobile-nav-menu">
+						<div hidden id="mobile-nav-menu" class="mobile-nav-menu var-color-orange">
 							<i id="close" class="fa-solid fa-x"></i>
 							<ul class="flex">
 								<li>
@@ -125,7 +126,7 @@
 						<h2 class="text-lg">Web Development Specialist</h2>
 						<p>
 							Seeking an internship in the UX/UI field. Currently an honors
-							student at University at Albany majoring in Informatics with
+							student at University at Albany majoring in Informatics <br />with
 							a concentration in web design, Fluent in html, css, moderate
 							Javascript fluency, php, and MySQL.
 						</p>
@@ -139,7 +140,7 @@
     </section>
 
     <section>
-			<div class="contact-list var-color-orange padding-block-8">
+			<div class="contact-list var-color-orange padding-block-6">
 				<div class="container text-center">
 					<div class="grid-2 grid-1-sm contact">
 						<div class="list-1 slide-left">
@@ -193,48 +194,50 @@
 
     <main>
       <section class="var-color-red">
-        <div class="container">
+        <div class="container education">
           <div class="grid-1">
             <h2 class="text-center text-uppercase text-white text-lg padding-block-4">Education</h2>
-            <div class="flex padding-4 text-white justify-between">
+            <div class="albany-container flex padding-4 margin-block-8 text-white justify-between var-color-red-light-2 border-white border-radius-10">
               <div class="flex albany">
               <img class="padding-right-3" src="src/assets/ualbany-logo.jpeg" width="150" alt="University at Albany logo">
-              <h3>University At Albany <span class="d-block">Albany NY.</span></h3>
+              <h3>University At Albany <span class="d-block">Albany NY</span></h3>
             </div>
               <p class="text-right">Fall 2021-Present</p>
             </div>
             </div>
-            <div class="flex padding-4 text-white justify-between">
+            <div class="hvcc-container flex padding-4 margin-block-8 text-white justify-between var-color-red-light-2 border-white border-radius-10">
               <div class="flex hvcc">
               <img class="padding-right-3" src="src/assets/hvcc-logo.jpeg" width="150" alt="Hudson Valley Community College Logo">
               <h3>Hudson Valley Community College <span class="d-block">Troy, NY </span></h3>
             </div>
               <p class="text-right">Spring 2021</p>
             </div>
-            <div class="flex padding-4 text-white justify-between">
+            <div class="ccm-container flex padding-4 margin-block-8 text-white justify-between var-color-red-light-2 border-white border-radius-10">
               <div class="flex ccm">
                 <img src="src/assets/ccm-logo.jpeg" alt="County College of Morris Logo" width="150" class="padding-right-3">
                 <h3>County College of Morris <span class="d-block">Randolph, NJ.</span></h3>
             </div>
               <p class="text-right">Fall 2018–Fall 2020</p>
             </div>
-            <div class="flex padding-4 text-white justify-between">
+            <div class="ncc-container flex padding-4 margin-block-8 text-white justify-between var-color-red-light-2 border-white border-radius-10">
               <div class="flex ncc">
                 <img src="src/assets/ncc-logo.png" alt="Norwalk Community College Logo" width="150" class="padding-right-3">
                 <h3>Norwalk Community College <span class="d-block">Norwalk, CT</span> </h3>
               </div>
               <p class="text-right">Fall 2017-Spring 2018</p>
             </div>
-            <div class="grid-2 grid-1-sm padding-4 text-white">
+            <div class="cia grid-2 grid-1-md padding-4 margin-block-8 text-white var-color-red-light-2 border-white border-radius-10">
               <div class="ct-art">
-                <p>Connecticut Institute of Art | Greenwich, CT</p>
-                <p>Associate degree – Graphic Design</p>
+                <h3>Connecticut Institute of Art <span class="d-block"> Greenwich, CT <span class="d-block">Associate degree – Graphic Design</span></span></h3>
               </div>
-              <p class="text-right">1999</p>
+              <p class="grid-1-md text-right">1999</p>
             </div>
           </div>
         </div>
       </section>
+      <button id="scroll" class="scroll var-color-purple">
+        <i class="fa-solid fa-chevron-up text-white"></i></button>
+        </section>
     </main>
 	</body>
 </html>

@@ -39,5 +39,11 @@ main {
                 flex-direction: column;
             }
         }
+
+        @include md () {
+            .scroll {
+                display: none !important;
+            }
+        }
     }
 }

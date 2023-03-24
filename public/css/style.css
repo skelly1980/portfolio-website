@@ -99,6 +99,10 @@ a {
   display: flex;
 }
 
+.flex-direction {
+  flex-direction: column;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -3753,6 +3757,11 @@ main .jobs .header-small {
     display: block;
   }
 }
+@media (max-width: 760px) {
+  main .scroll {
+    display: none !important;
+  }
+}
 @media (max-width: 480px) {
   main main {
     padding: 2rem;
@@ -3801,5 +3810,42 @@ main section .tab-ux-content img {
   }
   main section .tab-ux-content .flex {
     flex-direction: column;
+  }
+}
+@media (max-width: 760px) {
+  main section .scroll {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  main .education {
+    padding-block: 2rem;
+  }
+  main .albany,
+  main .albany-container,
+  main .hvcc-container,
+  main .hvcc,
+  main .ccm-container,
+  main .ccm,
+  main .ncc-container,
+  main .ncc {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main .cia {
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+  main .cia .ct-art h3 span {
+    margin-block: 1rem;
+  }
+  main .cia p {
+    text-align: center;
+  }
+  main .scroll {
+    display: none !important;
   }
 }

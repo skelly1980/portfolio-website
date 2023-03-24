@@ -84,6 +84,12 @@ main {
         }
     }
 
+    @include md () {
+        .scroll {
+            display: none !important;
+        }
+    }
+
     @include sm() {
         main {
             padding: 2rem;

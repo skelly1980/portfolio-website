@@ -1,4 +1,6 @@
 @mixin btn () {
+    min-height: 45px;
+    min-width: 45px;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;

@@ -2824,6 +2824,8 @@ a {
 }
 
 .btn-white {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2837,6 +2839,8 @@ a {
 }
 
 .btn-outlined-white {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2850,6 +2854,8 @@ a {
 }
 
 .btn-black {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2863,6 +2869,8 @@ a {
 }
 
 .btn-outlined-black {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2876,6 +2884,8 @@ a {
 }
 
 .btn-blue {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2889,6 +2899,8 @@ a {
 }
 
 .btn-outlined-blue {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2902,6 +2914,8 @@ a {
 }
 
 .btn-green {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2915,6 +2929,8 @@ a {
 }
 
 .btn-outlined-green {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2928,6 +2944,8 @@ a {
 }
 
 .btn-yellow {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2941,6 +2959,8 @@ a {
 }
 
 .btn-outlined-yellow {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2954,6 +2974,8 @@ a {
 }
 
 .btn-pink {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2967,6 +2989,8 @@ a {
 }
 
 .btn-outlined-pink {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2980,6 +3004,8 @@ a {
 }
 
 .btn-orange {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -2993,6 +3019,8 @@ a {
 }
 
 .btn-outlined-orange {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -3006,6 +3034,8 @@ a {
 }
 
 .btn-purple {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -3019,6 +3049,8 @@ a {
 }
 
 .btn-outlined-purple {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -3032,6 +3064,8 @@ a {
 }
 
 .btn-red {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -3045,6 +3079,8 @@ a {
 }
 
 .btn-outlined-red {
+  min-height: 45px;
+  min-width: 45px;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -3077,6 +3113,20 @@ a {
   transform: scale(120%, 120%);
 }
 
+.modal {
+  padding: 1rem;
+  max-width: 50ch;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+}
+.modal > * {
+  margin: 0 0 0.5rem 0;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 header .container {
   width: 100%;
   max-width: 1200px;
@@ -3101,9 +3151,7 @@ header nav .menu ul a .fa-school {
 }
 header nav .menu ul li:hover > h3 {
   display: block;
-  position: absolute;
-  font-size: 1.8em;
-  top: 80px;
+  font-size: 1em;
 }
 header nav .menu ul h3 {
   display: none;
@@ -3730,6 +3778,11 @@ main .jobs .orvis h2 {
 main .jobs .header-small {
   display: none;
 }
+@media (max-width: 1200px) {
+  main main {
+    padding: 2rem;
+  }
+}
 @media (max-width: 960px) {
   main body {
     margin: 0 auto;
@@ -3818,9 +3871,14 @@ main section .tab-ux-content img {
   }
 }
 
+@media (max-width: 1200px) {
+  main .education {
+    padding: 2rem;
+  }
+}
 @media (max-width: 760px) {
   main .education {
-    padding-block: 2rem;
+    padding: 2rem;
   }
   main .albany,
   main .albany-container,

@@ -4,9 +4,20 @@ const btnOpen = document.getElementById("open");
 const menu = document.getElementById('mobile-nav-menu');
 const scroll = document.getElementById('scroll');
 
+const d = new Date ();
+const today = d.toLocaleString("default", {
+	month: 'long',
+    weekday: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    timeZone: 'America/New_York'
+});
+
+const date = document.querySelector('.date').innerHTML = today;
+
 function scrollTop() {
 	document.documentElement.scrollTop = 0;
-}
+};
 
 window.onscroll = function () {
 	scrollFunction();

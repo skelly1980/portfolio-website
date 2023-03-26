@@ -50,6 +50,12 @@ main {
 
     }
 
+    @include xl () {
+        main {
+            padding: 2rem;
+        }
+    }
+
     @include lg() {
         body {
             margin: 0 auto;

@@ -3830,6 +3830,9 @@ main .jobs .header-small {
   }
 }
 
+main {
+  padding: 0 2rem;
+}
 main section {
   position: relative;
 }
@@ -3853,13 +3856,29 @@ main section .tab-content img {
   margin: 0 auto;
 }
 main section .tab-ux-content img {
-  width: 50%;
+  width: 20%;
   height: auto;
   margin: 0 auto;
 }
+@media (max-width: 1200px) {
+  main section main {
+    margin: 0 2rem;
+  }
+  main section .tab-container {
+    margin-bottom: 2rem;
+  }
+}
 @media (max-width: 960px) {
+  main section body {
+    margin: 0 2rem;
+    padding: 1rem;
+  }
+  main section .tab-content h2 {
+    padding: 0;
+  }
   main section .tab-content .flex {
     flex-direction: column;
+    margin-top: 2rem;
   }
   main section .tab-ux-content .flex {
     flex-direction: column;
@@ -3868,6 +3887,11 @@ main section .tab-ux-content img {
 @media (max-width: 760px) {
   main section .scroll {
     display: none !important;
+  }
+}
+@media (max-width: 480px) {
+  main section main {
+    padding: 2rem;
   }
 }
 

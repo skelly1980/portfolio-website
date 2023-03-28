@@ -1,4 +1,6 @@
 main {
+    padding: 0 2rem;
+
     section {
         position: relative;
 
@@ -25,14 +27,34 @@ main {
         }
 
         .tab-ux-content img {
-            width: 50%;
+            width: 20%;
             height: auto;
             margin: 0 auto;
         }
 
+        @include xl () {
+            main {
+                margin: 0 2rem;
+            }
+
+            .tab-container {
+                margin-bottom: 2rem;
+            }
+        }
+
         @include lg () {
+            body {
+                margin: 0 2rem;
+                padding: 1rem;
+            }
+
+            .tab-content h2 {
+                padding: 0;
+            }
+
             .tab-content .flex {
                 flex-direction: column;
+                margin-top: 2rem;
             }
 
             .tab-ux-content .flex {
@@ -43,6 +65,12 @@ main {
         @include md () {
             .scroll {
                 display: none !important;
+            }
+        }
+
+        @include sm() {
+            main {
+                padding: 2rem;
             }
         }
     }

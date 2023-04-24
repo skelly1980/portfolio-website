@@ -138,7 +138,7 @@
     </div>
     </section>
 
-    <section>
+    <section class="section-contact">
 			<div class="contact-list var-color-orange padding-block-6">
 				<div class="container text-center">
 					<div class="grid-2 grid-1-sm contact">
@@ -147,15 +147,17 @@
 								<li>
 									<i class="fa-regular fa-envelope text-white"></i
 									><a
-										class="text-white padding-inline-start-4"
-										href="#"
-										target="_blank"
-										>skelly@yahoo.com</a
-									>
+										class="text-white padding-inline-start-4 open-modal"
+										>Email Address</a>
+                  <dialog id="modal" class="modal">
+                    <button class="btn-orange"><a href="mailto:skelly1980@yahoo.com">Email Me</a></button>
+                    <p>Click the link above <br/> or copy my email: skelly1980@yahoo.com</p>
+                    <button class="close-modal btn-orange text-white">Close</button>
+                  </dialog>
 								</li>
 								<li class="padding-block-start-6">
-									<i class="fa-light fa-location-dot text-white"></i
-									><a
+									<i class="fa-solid fa-location-dot text-white"></i>
+                  <a
 										class="text-white padding-inline-start-4"
 										href="#"
 										target="_blank"
@@ -191,11 +193,11 @@
 			</div>
 		</section>
 
-		<main class="var-color-red">
+		<main class="var-color-red padding-bottom-6">
       <!-- tab section -->
       <section class="var-color-red">
         <div class="container">
-          <h2 class="text-center text-white padding-block-4">Web Development</h2>
+          <h2 class="text-xl text-center text-white padding-block-4">Web Development</h2>
         <div class="tab-container grid-6 grid-3-xl grid-2-md grid-1-sm padding-block-6">
             <!-- html -->
             <div id="tab-1" class="html tabs border padding-block-4">
@@ -227,90 +229,108 @@
 
         <!-- tab content -->
       <section class="var-color-red">
-        <div class="container padding-block-6 border-white border-radius-15 var-color-red-light-2">
+        <div class="container border-white border-radius-15 var-color-red-light-2 padding-bottom-4">
           <div class="grid-1 grid-1-sm">
             <!-- html section -->
-            <div id="tab-1-content" class="html-content tab-content d-block padding-block-4">
+            <div id="tab-1-content" class="html-content tab-content d-block padding-4">
               <h2 class="text-lg padding-top-4 padding-bottom-2 text-center text-white">html 5</h2>
-              <div class="flex padding-inline-4">
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
               <img src="src/assets/html5-logo.png" alt="html5-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="html-skills">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Advanced knowledge of HTML5 syntax, semantic markup, and best practices</li>
+                  <li class="bullets">Proficient in creating well-structured and accessible web pages</li>
+                  <li class="bullets">Proficiency in using HTML5 form elements and validation techniques</li>
+                  <li class="bullets">Experience with integrating HTML5 with other web technologies such as CSS and JavaScript</li>  
+                  <li class="bullets">Knowledge of accessibility standards and guidelines for creating inclusive content</li>
+                </ul>
+            </div>
             </div>
             </div>
             <!-- css section -->
-            <div id="tab-2-content" class="css-content tab-content padding-block-4">
+            <div id="tab-2-content" class="css-content tab-content padding-4">
               <h2 class="text-lg padding-top-4 padding-bottom-2 text-center text-white">css 3</h2>
-              <div class="flex">
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
               <img src="src/assets/css3-icon-logo.png" alt="css-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="css-skills">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Advanced knowledge of CSS3 syntax, selectors, and cascading principles</li>
+                  <li class="bullets">Proficient in creating responsive and mobile-friendly layouts using CSS3 grid and flexbox</li>
+                  <li class="bullets">Experience in using CSS3 to create animations, transitions, and other interactive effects</li>
+                  <li class="bullets">Proficiency in using CSS3 media queries and breakpoints to create responsive designs for different devices and screen sizes</li>  
+                  <li class="bullets">Understanding of cross-browser compatibility issues and techniques for addressing them</li>
+                  <li class="bullets">Knowledge of accessibility standards and guidelines for creating inclusive CSS3 content</li>
+                </ul>
+            </div>
             </div>
           </div>
             <!-- javascript section -->
-            <div id="tab-3-content" class="javascript-content tab-content padding-block-4">
+            <div id="tab-3-content" class="javascript-content tab-content padding-4">
               <h2 class="text-lg padding-top-4 padding-bottom-2 text-center text-white">Javascript</h2>
-              <div class="flex">
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
               <img src="src/assets/javascript-logo-icon.png" alt="javascript-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="javascript-skills">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Understanding of JavaScript syntax, data types, and basic programming concepts</li>
+                  <li class="bullets">Ability to write simple functions and conditional statements in JavaScript</li>
+                  <li class="bullets">Familiarity with JavaScript libraries such as jQuery</li>
+                  <li class="bullets">Proficiency in using JavaScript to manipulate the Document Object Model (DOM)</li>  
+                  <li class="bullets">Experience in using JavaScript to handle user interactions and events on web pages</li>
+                </ul>
             </div>
           </div>
+            </div>
             <!-- php section -->
-            <div id="tab-4-content" class="php-content tab-content padding-block-4">
+            <div id="tab-4-content" class="php-content tab-content padding-4">
               <h2 class="text-lg padding-top-4 padding-bottom-2 text-center text-white">php</h2>
-              <div class="flex">
-              <img class="padding-left-6" src="src/assets/PHP-Logo-PNG.png" alt="php-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+              <img src="src/assets/PHP-Logo-PNG.png" alt="php-logo">
+              <div class="php-skills">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Understanding of PHP syntax, data types, and basic programming concepts</li>
+                  <li class="bullets">Ability to write simple functions and conditional statements in PHP</li>
+                  <li class="bullets">Proficiency in using PHP to interact with databases and perform CRUD operations using MySQL or similar databases</li>
+                  <li class="bullets">Ability to integrate PHP with front-end technologies such as HTML, CSS, and JavaScript</li>  
+                </ul>
             </div>
           </div>
+            </div>
             <!-- scss section -->
-            <div id="tab-5-content" class="scss-content tab-content padding-block-4">
+            <div id="tab-5-content" class="scss-content tab-content padding-4">
               <h2 class="text-lg padding-block-4 text-center text-white">scss</h2>
-              <div class="flex">
-              <img class="padding-left-6" src="src/assets/sass-logo-icon.png" alt="scss-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+              <img src="src/assets/sass-logo-icon.png" alt="scss-logo">
+              <div class="scss-skills">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Advanced knowledge of SCSS syntax, variables, mixins, and functions</li>
+                  <li class="bullets">Experience in using SCSS to create complex layouts and responsive designs</li>
+                  <li class="bullets">Understanding of SCSS preprocessors and their benefits over traditional CSS</li>
+                  <li class="bullets">Proficiency in using SCSS to create modular and scalable CSS architecture</li>
+                  <li class="bullets">Understanding of inheritance and nested selectors in SCSS and their impact on performance</li>
+                  <li class="bullets">Familiarity with the latest features and updates in SCSS such as color functions, loops, and conditionals</li>
+                </ul>
+              </div>
             </div>
           </div>
             <!-- mysql section -->
-            <div id="tab-6-content" class="mysql-content tab-content padding-block-4">
+            <div id="tab-6-content" class="mysql-content tab-content padding-4">
               <h2 class="text-lg padding-block-4 text-center text-white">MySQL</h2>
-              <div class="flex">
-              <img class="padding-left-6" src="src/assets/mysql-logo-icon.png" alt="mysql-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+              <img src="src/assets/mysql-logo-icon.png" alt="mysql-logo">
+              <div class="mysql-skills">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Understanding of MySQL syntax, data types, and basic database concepts</li>
+                  <li class="bullets">Proficiency in using MySQL to create and manage databases, tables, and indexes</li>
+                  <li class="bullets">Experience in writing SQL queries to retrieve, insert, update, and delete data from databases</li>
+                  <li class="bullets">Proficiency in using MySQL Workbench or similar tools for database management and modeling</li>  
+                </ul>
+            </div>
             </div>
           </div>
         </div>
@@ -319,8 +339,8 @@
 
       <section class="var-color-red">
         <div class="container padding-bottom-4">
-          <h2 class="text-center text-white padding-block-6">UX/UI Design</h2>
-        <div class="grid-3 grid-3-lg grid-2-md grid-1-sm padding-block-6">
+          <h2 class="text-xl text-center text-white padding-block-6">UX/UI Design</h2>
+        <div class="grid-4 grid-4-lg grid-2-md grid-1-sm padding-block-6">
             <!-- photoshop -->
             <div id="ux-1" class="photoshop ux border padding-block-4">
               <h3 class="text-md text-center text-white">Photoshop</h3>
@@ -333,66 +353,239 @@
             <div id="ux-3" class="XD ux padding-block-4">
               <h3 class="text-md text-center text-white">XD</h3>
             </div>
+            <!-- Figma -->
+            <div id="ux-4" class="XD ux padding-block-4">
+              <h3 class="text-md text-center text-white">Figma</h3>
+            </div>
           </div>
         </div>
 
           <!-- tab content -->
       <section class="var-color-red padding-bottom-8">
-        <div class="container padding-block-6 border-white border-radius-15 var-color-red-light-2">
+        <div class="container border-white border-radius-15 var-color-red-light-2 padding-bottom-4">
           <div class="grid-1 grid-1-sm">
             <!-- Photoshop section -->
-            <div id="ux-1-content" class="html-content tab-ux-content d-block">
+            <div id="ux-1-content" class="html-content tab-ux-content padding-4 d-block">
               <h2 class="text-lg padding-block-4 text-center text-white">Adobe Photoshop</h2>
-              <div class="flex">
-              <img class="padding-left-6"  src="src/assets/photoshop.jpeg" alt="html5-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+              <img src="src/assets/photoshop.jpeg" alt="html5-logo">
+              <div class="mysql-skills padding-inline-4 bg-white border-radius-15">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Advanced knowledge of Adobe Photoshop tools, panels, and workspace</li>
+                  <li class="bullets">Proficiency in using Photoshop to create and manipulate raster graphics, such as photos and digital artwork</li>
+                  <li class="bullets">Experience in using layers, masks, and blending modes to create complex compositions</li>
+                  <li class="bullets">Familiarity with Photoshop filters, effects, and adjustment layers to enhance and modify images</li>
+                  <li class="bullets">Understanding of typography and text effects in Photoshop</li>    
+                </ul>
+            </div>
             </div>
             </div>
             <!-- illustrator section -->
-            <div id="ux-2-content" class="css-content tab-ux-content">
+            <div id="ux-2-content" class="css-content tab-ux-content padding-4">
               <h2 class="text-lg padding-block-4 text-center text-white">Adobe Illustrator</h2>
-              <div class="flex">
-              <img class="padding-left-6"  src="src/assets/illustrator.jpeg" alt="css-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+              <img src="src/assets/illustrator.jpeg" alt="css-logo">
+              <div class="mysql-skills padding-inline-4 bg-white border-radius-15">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Advanced knowledge of Adobe Illustrator tools, panels, and workspace</li>
+                  <li class="bullets">Proficiency in using Illustrator to create and manipulate vector graphics, such as logos, icons, and illustrations</li>
+                  <li class="bullets">Familiarity with Illustrator's pen tool and its various options for creating and editing paths</li>
+                  <li class="bullets">Understanding of typography and text effects in Illustrator</li>  
+                </ul>
+            </div>
             </div>
           </div>
             <!-- XD section -->
-            <div id="ux-3-content" class="javascript-content tab-ux-content">
+            <div id="ux-3-content" class="javascript-content tab-ux-content padding-4">
               <h2 class="text-lg padding-block-4 text-center text-white">Adobe XD</h2>
-              <div class="flex">
-              <img class="padding-left-6" src="src/assets/xd.jpeg" alt="javascript-logo">
-              <p class="padding-inline-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque id rerum enim quo eos placeat repellat rem nihil, 
-                animi suscipit odit voluptatem magni, fugit ad assumenda fuga et? Aliquam deleniti deserunt fugiat laudantium doloribus 
-                facere, porro consequatur pariatur quia, harum molestias. Inventore at cupiditate dolorum repellendus quae sequi, rem velit 
-                ipsa et sapiente doloremque numquam magni accusantium voluptatibus doloribus? Veniam, esse eius! Labore ipsam laboriosam 
-                dignissimos vitae corporis repellendus ea perferendis eos assumenda atque ex earum quia accusantium, 
-                deleniti dicta aliquid officia omnis iusto laudantium? Earum dolores asperiores, dicta alias fuga reprehenderit consequatur 
-                labore odit ex vero iure ullam repellat.</p>
+              <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+              <img src="src/assets/xd.jpeg" alt="javascript-logo">
+              <div class="mysql-skills padding-inline-4">
+                <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+                <ul class="padding-4">
+                  <li class="bullets">Advanced knowledge of Adobe XD tools, panels, and workspace</li>
+                  <li class="bullets">Proficiency in using XD to create and prototype user interfaces for web and mobile applications</li>
+                  <li class="bullets">Experience in creating wireframes, mockups, and interactive prototypes using XD</li>
+                  <li class="bullets">Understanding of design principles and user experience (UX) best practices in XD</li>  
+                </ul>
+            </div>
             </div>
           </div>
+          <!-- Figma -->
+          <div id="ux-4-content" class="javascript-content tab-ux-content padding-4">
+            <h2 class="text-lg padding-block-4 text-center text-white">Figma</h2>
+            <div class="flex padding-4 grid-gap-md bg-white border-radius-15">
+            <img src="src/assets/figma.jpeg" alt="javascript-logo">
+            <div class="mysql-skills padding-inline-4">
+              <h2 class="padding-block-4 text-center text-underline">Skills</h2>
+              <ul class="padding-4">
+                <li class="bullets">Advanced knowledge of Figma tools, panels, and workspace</li>
+                <li class="bullets">Proficiency in using Figma to create and prototype user interfaces for web and mobile applications</li>
+                <li class="bullets">Experience in creating wireframes, mockups, and interactive prototypes using Figma</li>
+                <li class="bullets">Understanding of design principles and user experience (UX) best practices in Figma</li>
+                <li class="bullets">Familiarity with Figma's vector design tools and the ability to create custom icons and graphics</li>
+                <li class="bullets">Proficiency in using Figma's component and style systems to create reusable design elements</li>     
+              </ul>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
       </section>
 
-        <button id="scroll" class="scroll var-color-purple">
-          <i class="fa-solid fa-chevron-up text-white"></i></button>
+      <!-- Soft Skills Section -->
+      <section class="soft-skills var-color-red padding-block-4">
+        <div class="container padding-bottom-4">
+        <h2 class="text-xl text-white padding-4 text-center">Soft Skills</h2>
+        </div>
+        <div class="container border-white border-radius-15 var-color-red-light-2 padding-4">
+          <div class="grid-6 grid-3-xl grid-2-md grid-1-sm grid-gap-md padding-4">
+            <button class="btn-purple text-white ">Communication & Creativity</button>
+            <button class="btn-purple text-white">Leadership</button>
+            <button class="btn-purple text-white">Team Work</button>
+            <button class="btn-purple text-white">Problem Solving</button>
+            <button class="btn-purple text-white">General Work</button>
+            <button class="btn-purple text-white">Research</button>
+          </div>
+            <!--  
+            <dialog id="modal" class="modal-skills">
+              <h2>Communication</h2>
+              <div class="modal-container flex justify-around padding-4">
+              <ul class="padding-4">
+                <li class="bullets">Writing clearly and concisely</li>
+                <li class="bullets">Expressing ideas</li>
+                <li class="bullets">Doing more with less</li>
+              </ul>
+              <ul class="padding-4">
+                <li class="bullets">Listening attentively</li>
+                <li class="bullets">Public speaking</li>
+                <li class="bullets">Improvising </li>
+              </ul>
+            </div>
+            <div class="btn-container text-center">
+            <button data-close-button class="btn-purple text-white modal-close">Close</button>
+          </div>
+            </dialog>
+        
+            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Leadership</button>
+          
+            <dialog id="modal" class="modal-skills-leadership">
+              <h2>Leadership Modal</h2>
+              <div class="modal-container flex justify-around padding-4">
+              <ul class="padding-4">
+                <li class="bullets">Generating and initiating ideas</li>
+                <li class="bullets">Expressing ideas</li>
+                <li class="bullets">Doing more with less</li>
+              </ul>
+              <ul class="padding-4">
+                <li class="bullets">Setting and accomplishing goals</li>
+                <li class="bullets">Delegating responsibility</li>
+              </ul>
+            </div>
+            <div class="btn-container text-center">
+            <button data-close-button class="btn-purple text-white modal-close">Close</button>
+          </div>
+            </dialog>
+         
+            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Team Work</button>
+         
+            <dialog class="modal-teamwork">
+              <div class="modal-container flex justify-around padding-4">
+              <ul class="padding-4">
+                <li class="bullets">Generating and initiating ideas</li>
+                <li class="bullets">Expressing ideas</li>
+                <li class="bullets">Doing more with less</li>
+              </ul>
+              <ul class="padding-4">
+                <li class="bullets">Setting and accomplishing goals</li>
+                <li class="bullets">Delegating responsibility</li>
+              </ul>
+            </div>
+            <div class="btn-container text-center">
+            <button class="btn-purple text-white modal-close">Close</button>
+          </div>
+            </dialog>
+          
+            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Problem Solving</button>
+            
+            <dialog class="modal-skills">
+              <div class="modal-container flex justify-around padding-4">
+              <ul class="padding-4">
+                <li class="bullets">Generating and initiating ideas</li>
+                <li class="bullets">Expressing ideas</li>
+                <li class="bullets">Doing more with less</li>
+              </ul>
+              <ul class="padding-4">
+                <li class="bullets">Setting and accomplishing goals</li>
+                <li class="bullets">Delegating responsibility</li>
+              </ul>
+            </div>
+            <div class="btn-container text-center">
+            <button data-modal-target="#modal" class="btn-purple text-white modal-close">Close</button>
+          </div>
+            </dialog>
+         
+            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Research</button>
+            
+            <dialog class="modal-skills">
+              <div class="modal-container flex justify-around padding-4">
+              <ul class="padding-4">
+                <li class="bullets">Generating and initiating ideas</li>
+                <li class="bullets">Expressing ideas</li>
+                <li class="bullets">Doing more with less</li>
+              </ul>
+              <ul class="padding-4">
+                <li class="bullets">Setting and accomplishing goals</li>
+                <li class="bullets">Delegating responsibility</li>
+              </ul>
+            </div>
+            <div class="btn-container text-center">
+            <button class="btn-purple text-white modal-close">Close</button>
+          </div>
+            </dialog>
+         
+            <button data-modal-target="#modal" class="btn-purple text-white modal-open">General Work</button>
+           
+            <dialog class="modal-skills">
+              <div class="modal-container flex justify-around padding-4">
+              <ul class="padding-4">
+                <li class="bullets">Generating and initiating ideas</li>
+                <li class="bullets">Expressing ideas</li>
+                <li class="bullets">Doing more with less</li>
+              </ul>
+              <ul class="padding-4">
+                <li class="bullets">Setting and accomplishing goals</li>
+                <li class="bullets">Delegating responsibility</li>
+              </ul>
+            </div>
+            <div class="btn-container text-center">
+            <button class="btn-purple text-white modal-close">Close</button>
+          </div>
+            </dialog>
+          -->
+          </div>
+        </div>
+      </section>
+
       </section>
     </main>
 
-    <footer>
+        <button id="scroll" class="scroll var-color-purple">
+          <i class="fa-solid fa-chevron-up text-white"></i></button>
+
+    <footer class="footer">
 			<section class="bg-black">
 				<div class="container padding-8">
-					<div class="grid-1 place-end">
+					<div class="grid-2 grid-1-lg place-end">
+            <nav>
+              <ul class="flex justify-between">
+                <li><a class="text-white text-md" href="index.html" target="_blank">Work Experience</a></li>
+                <li><a class="text-white text-md" href="skills.html" target="_blank">Skills</a></li>
+                <li><a class="text-white text-md" href="education.html" target="_blank">Education</a></li>
+              </ul>
+            </nav>
 						<p class="date text-white text-md"></p>
 					</div>
 				</div>

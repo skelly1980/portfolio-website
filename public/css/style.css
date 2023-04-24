@@ -87,8 +87,16 @@ ul {
   list-style: none;
 }
 
+.bullets {
+  list-style-type: disc;
+}
+
 a {
   text-decoration: none;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .d-block {
@@ -103,12 +111,8 @@ a {
   flex-direction: column;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.align-center {
-  align-items: center;
+.text-underline {
+  text-decoration: underline;
 }
 
 .text-uppercase {
@@ -3113,17 +3117,24 @@ a {
   transform: scale(120%, 120%);
 }
 
-.modal {
+.modal,
+.modal-skills,
+.modal-skills-leadership {
   padding: 1rem;
   max-width: 50ch;
   inset: 50% auto auto 50%;
   transform: translate(-50%, -50%);
+  border: 0;
 }
-.modal > * {
+.modal > *,
+.modal-skills > *,
+.modal-skills-leadership > * {
   margin: 0 0 0.5rem 0;
 }
 
-.modal::backdrop {
+.modal::backdrop,
+.modal-skills::backdrop,
+.modal-skills-leadership::backdrop {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -3733,6 +3744,25 @@ section .contact-list ul li {
     grid-template-columns: repeat(12, 1fr);
   }
 }
+.footer {
+  border-top: 2px solid #fff;
+}
+.footer nav {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .footer .grid-1-lg {
+    place-items: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .footer nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 main section .tabs .container {
   width: 100%;
   max-width: 1200px;
@@ -3830,6 +3860,25 @@ main .jobs .header-small {
   }
 }
 
+.footer {
+  border-top: 2px solid #fff;
+}
+.footer nav {
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .footer .grid-1-lg {
+    place-items: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .footer nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 main {
   padding: 0 2rem;
 }
@@ -3844,7 +3893,8 @@ main section #tab-5-content,
 main section #tab-6-content,
 main section #ux-1-content,
 main section #ux-2-content,
-main section #ux-3-content {
+main section #ux-3-content,
+main section #ux-4-content {
   display: none;
 }
 main section .tabs {
@@ -3893,6 +3943,17 @@ main section .tab-ux-content img {
   main section main {
     padding: 2rem;
   }
+}
+
+.section-contact .contact-list .container .list-1 ul li a {
+  cursor: pointer;
+}
+
+.soft-skills button {
+  cursor: none;
+}
+.soft-skills button:hover {
+  background-color: #800080;
 }
 
 @media (max-width: 1200px) {

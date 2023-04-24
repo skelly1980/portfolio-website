@@ -76,7 +76,7 @@ tab.forEach(item => item.addEventListener('click', selectedItems));
 
 
 // UX tab section
-const ux= document.querySelectorAll('.ux');
+const ux = document.querySelectorAll('.ux');
 const tabContentUX = document.querySelectorAll('.tab-ux-content');
 
 function selectItem (e) {
@@ -99,3 +99,133 @@ function showRemove () {
 }
 
 ux.forEach(item => item.addEventListener('click', selectItem));
+
+/*
+const modalOpen = document.querySelectorAll('[data-modal-target]');
+const modalClose= document.querySelectorAll('[data-close-button]');
+
+modalOpen.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = document.querySelector('.modal-skills');
+        modal.showModal();
+        console.log(modal);
+    });
+    button.addEventListener('click', () => {
+        const modalLeadership = document.querySelector('.modal-skills-leadership');
+        modalLeadership.showModal();
+        console.log(modalLeadership);
+    })
+})
+
+modalClose.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.modal-skills');
+        closeModal(modal);
+    })
+    
+    button.addEventListener('click', () => {
+        const modalLeadership = button.closest('.modal-skills-leadership');
+        closeModal(modalLeadership);
+    })
+    
+})
+
+function closeModal (modal) {
+    if(modal == null) return
+    modal.close();
+}
+
+window.addEventListener('click', bodyClick);
+
+function bodyClick (e) {
+    const modal = document.querySelector('.modal-skills');
+   if(e.target == modal) {
+    modal.close();
+   } 
+};
+
+
+const shopping = ['bread', 'milk', 'cheese', 'hummus', 'noodles'];
+
+function randomGrocery () {
+    const random = Math.floor(Math.random() * shopping.length);
+    const output = shopping[random];
+    return output;
+}
+
+randomGrocery();
+
+console.log(randomGrocery());
+//const random = Math.floor(Math.random() * shop.length);
+
+//console.log(random);
+
+
+modalOpen.addEventListener('click', () => {
+    modal.showModal();
+});
+
+modalClose.addEventListener('click', () => {
+    modal.close();
+});
+
+window.addEventListener('click', bodyClick);
+
+function bodyClick (e) {
+   if(e.target == modal) {
+    modal.close();
+   } 
+};
+
+const openModal = document.querySelector('.modal-open');
+const closeModal= document.querySelector('.modal-close');
+const modalSkills = document.querySelector('.modal-skills');
+const modalSkillsLeadership = document.querySelector('.modal-skills-leadership');
+
+//function displayModal() {
+	//modalSkills.showModal();
+	//const skillContent = document.querySelector(`#${this.id}-skills`);
+	//console.log(skillContent);
+//};
+
+//openModal.forEach(item => item.addEventListener('click', displayModal));
+
+openModal.addEventListener('click', () => {
+    modalSkills.showModal();
+    modalSkillsLeadership.showModal();
+});
+
+closeModal.addEventListener('click', () => {
+    modalSkills.close();
+    modalSkillsLeadership.close();
+});
+
+window.addEventListener('click', bodyClick);
+
+function bodyClick (e) {
+   if(e.target == modalSkills) {
+    modalSkills.close();
+   } 
+};
+
+/*
+const openModalLeadership = document.querySelector('.modal-open-leadership');
+const closeModalLeadership = document.querySelector('.modal-close-leadership');
+const modalSkillsLeadership = document.querySelector('.modal-skills-leadership');
+
+openModalLeadership.addEventListener('click', () => {
+    modalSkillsLeadership.showModal();
+});
+
+closeModalLeadership.addEventListener('click', () => {
+    modalSkillsLeadership.close();
+});
+
+window.addEventListener('click', bodyClick);
+
+function bodyClick (e) {
+   if(e.target == modalSkillsLeadership) {
+	modalSkillsLeadership.close();
+   } 
+};
+*/

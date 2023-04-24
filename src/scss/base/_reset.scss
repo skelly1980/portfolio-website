@@ -37,8 +37,16 @@ ul {
     list-style: none;
 }
 
+.bullets {
+    list-style-type: disc;
+}
+
 a {
     text-decoration: none;
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 .d-block {
@@ -53,12 +61,8 @@ a {
     flex-direction: column;
 }
 
-.justify-center {
-    justify-content: center;
-}
-
-.align-center {
-    align-items: center;
+.text-underline {
+    text-decoration: underline;
 }
 
 .text-uppercase {

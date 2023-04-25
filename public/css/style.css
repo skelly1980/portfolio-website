@@ -3950,7 +3950,7 @@ main section .tab-ux-content img {
 }
 
 .soft-skills button {
-  cursor: none;
+  cursor: pointer;
 }
 .soft-skills button:hover {
   background-color: #800080;

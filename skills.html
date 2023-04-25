@@ -442,16 +442,9 @@
         </div>
         <div class="container border-white border-radius-15 var-color-red-light-2 padding-4">
           <div class="grid-6 grid-3-xl grid-2-md grid-1-sm grid-gap-md padding-4">
-            <button class="btn-purple text-white ">Communication & Creativity</button>
-            <button class="btn-purple text-white">Leadership</button>
-            <button class="btn-purple text-white">Team Work</button>
-            <button class="btn-purple text-white">Problem Solving</button>
-            <button class="btn-purple text-white">General Work</button>
-            <button class="btn-purple text-white">Research</button>
-          </div>
-            <!--  
-            <dialog id="modal" class="modal-skills">
-              <h2>Communication</h2>
+            <button onclick="window.dialog1.show();" class="btn-purple text-white modal-open">Communication</button>
+            <dialog id="dialog1" class="modal-skills">
+              <h2 class="text-center text-uppercase">Communication</h2>
               <div class="modal-container flex justify-around padding-4">
               <ul class="padding-4">
                 <li class="bullets">Writing clearly and concisely</li>
@@ -465,14 +458,14 @@
               </ul>
             </div>
             <div class="btn-container text-center">
-            <button data-close-button class="btn-purple text-white modal-close">Close</button>
+            <button onclick="window.dialog1.close();" class="btn-purple text-white modal-close">Close</button>
           </div>
             </dialog>
         
-            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Leadership</button>
+            <button onclick="window.dialog2.show();" class="btn-purple text-white modal-open">Leadership</button>
           
-            <dialog id="modal" class="modal-skills-leadership">
-              <h2>Leadership Modal</h2>
+            <dialog id="dialog2" class="modal-skills-leadership">
+              <h2 class="text-center text-uppercase">Leadership</h2>
               <div class="modal-container flex justify-around padding-4">
               <ul class="padding-4">
                 <li class="bullets">Generating and initiating ideas</li>
@@ -485,13 +478,14 @@
               </ul>
             </div>
             <div class="btn-container text-center">
-            <button data-close-button class="btn-purple text-white modal-close">Close</button>
+            <button onclick="window.dialog2.close();" class="btn-purple text-white modal-close">Close</button>
           </div>
             </dialog>
          
-            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Team Work</button>
+            <button onclick="window.dialog3.show();" class="btn-purple text-white modal-open">Team Work</button>
          
-            <dialog class="modal-teamwork">
+            <dialog id="dialog3" class="modal-skills-leadership">
+              <h2 class="text-center text-uppercase">Team Work</h2>
               <div class="modal-container flex justify-around padding-4">
               <ul class="padding-4">
                 <li class="bullets">Generating and initiating ideas</li>
@@ -504,13 +498,14 @@
               </ul>
             </div>
             <div class="btn-container text-center">
-            <button class="btn-purple text-white modal-close">Close</button>
+            <button onclick="window.dialog3.close();" class="btn-purple text-white modal-close">Close</button>
           </div>
             </dialog>
           
-            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Problem Solving</button>
+            <button onclick="window.dialog4.show();" class="btn-purple text-white modal-open">Problem Solving</button>
             
-            <dialog class="modal-skills">
+            <dialog id="dialog4" class="modal-skills">
+              <h2 class="text-center text-uppercase">Problem Solving</h2>
               <div class="modal-container flex justify-around padding-4">
               <ul class="padding-4">
                 <li class="bullets">Generating and initiating ideas</li>
@@ -523,13 +518,14 @@
               </ul>
             </div>
             <div class="btn-container text-center">
-            <button data-modal-target="#modal" class="btn-purple text-white modal-close">Close</button>
+            <button onclick="window.dialog4.close();" class="btn-purple text-white modal-close">Close</button>
           </div>
             </dialog>
          
-            <button data-modal-target="#modal" class="btn-purple text-white modal-open">Research</button>
+            <button onclick="window.dialog5.show();" class="btn-purple text-white modal-open">Research</button>
             
-            <dialog class="modal-skills">
+            <dialog id="dialog5" class="modal-skills">
+              <h2 class="text-center text-uppercase">Research</h2>
               <div class="modal-container flex justify-around padding-4">
               <ul class="padding-4">
                 <li class="bullets">Generating and initiating ideas</li>
@@ -542,13 +538,14 @@
               </ul>
             </div>
             <div class="btn-container text-center">
-            <button class="btn-purple text-white modal-close">Close</button>
+            <button onclick="window.dialog5.close();" class="btn-purple text-white modal-close">Close</button>
           </div>
             </dialog>
          
-            <button data-modal-target="#modal" class="btn-purple text-white modal-open">General Work</button>
+            <button onclick="window.dialog6.show();" class="btn-purple text-white modal-open">General Work</button>
            
-            <dialog class="modal-skills">
+            <dialog id="dialog6" class="modal-skills">
+              <h2 class="text-center text-uppercase">General Work</h2>
               <div class="modal-container flex justify-around padding-4">
               <ul class="padding-4">
                 <li class="bullets">Generating and initiating ideas</li>
@@ -561,10 +558,10 @@
               </ul>
             </div>
             <div class="btn-container text-center">
-            <button class="btn-purple text-white modal-close">Close</button>
+            <button onclick="window.dialog6.close();" class="btn-purple text-white modal-close">Close</button>
           </div>
             </dialog>
-          -->
+          </div>
           </div>
         </div>
       </section>
